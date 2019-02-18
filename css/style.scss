@@ -1,0 +1,187 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+// colors
+$green: #687c40;
+$grey: #6D6E71;
+
+// dimensions
+$logoDia: 100px;
+
+// mixins
+@mixin full-page {
+  width: 100vw;
+  margin: 0 -10vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  max-width: 1440px;
+  width: 80vw;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.5rem;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $logoDia / 2 + 10px;
+  color: $green;
+  text-transform: uppercase;
+  font-size: 1rem;
+
+  .nav, .icons {
+    min-width: 33.3%;
+  }
+
+  div, ul {
+    display: flex;
+
+    li {
+      margin-left: 20px;
+    }
+  }
+
+  .icons li{
+    margin-left: 15px;
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  order: 0;
+
+  ul {
+    display: none;
+  }
+  .menu, li {
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+
+.logo {
+  order: 1;
+  height: $logoDia;
+  width: $logoDia;
+  flex-shrink: 0;
+  margin: 10px 0;
+  border-radius: 50%;
+  border: 3px solid $green;
+  align-self: flex-start;
+  background-color: white;
+
+}
+
+.icons {
+  order: 3;
+  justify-content: flex-end;
+}
+
+.hero {
+  @include full-page;
+  max-height: 75vw;
+  height: 600px;
+  background-color: lighten($grey, 40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  margin-top: 30px;
+}
+
+
+p {
+  text-align: center;
+  // max-width: 80ch;
+}
+
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-list {
+    // width: 100%;
+    div {
+      display: flex;
+      width: 250px;
+      height: 125px;
+      // border-radius: 7.5pc 7.5pc 0 0;
+      border-radius: 125px 125px 0 0;
+      // border-radius: 30px;
+      margin: 20px 0;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $green;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+}
+
+footer {
+  background-color: $grey;
+  height: 150px;
+  @include full-page;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+
+    .logo {
+      order: 0;
+    }
+
+    .nav {
+      order: 1;
+      .menu {display: none;}
+      ul {display: flex;}
+    }
+
+    .icons {
+      min-width: $logoDia;
+    }
+  }
+
+  .products {
+    &-list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      div {
+        // margin-left: 10px;
+        // margin-left: 10px;
+      }
+    }
+  }
+}
