@@ -7,34 +7,35 @@
     <link rel="stylesheet" href="font/icon.css">
     <link rel="stylesheet" href="font/neutraText.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="modulepreload" href="js/home.mjs">
     <title>Cultiva</title>
   </head>
 
   <body>
     <!-- Page header -->
     <header>
-      <!-- Logo -->
-      <div class="logo"></div>
-
       <!-- navigation -->
       <nav class="nav">
-        <div class="entypo-menu menu"></div>
-        <ul>
-          <li>Home</li>
-          <li>Cultiva</li>
-          <li>Productos</li>
-          <li>Imagenes</li>
-          <li>Contacto</li>
-        </ul>
+        <!-- <div class="entypo-menu menu"></div> -->
+        <a href="#">
+          <div class="entypo-home"></div>
+          <span>Home</span>
+        </a>
+        <a href="#" onclick="loadPage(Products)">
+          <div class="entypo-leaf"></div>
+          <span>Products</span>
+        </a>
+        <!-- Logo -->
+        <div class="logo"></div>
+        <a href="#">
+          <div class="entypo-picture"></div>
+          <span>Images</span>
+        </a>
+        <a href="#">
+          <div class="entypo-vcard"></div>
+          <span>Contact</span>
+        </a>
       </nav>
-
-      <div class="icons">
-        <ul>
-          <li class="entypo-instagrem" alt="Instagram Icon"></li>
-          <li class="entypo-facebook-squared" alt="Facebook Icon"></li>
-          <li class="entypo-globe" alt="Language Icon"></li>
-        </ul>
-      </div>
     </header>
 
     <!-- Page main content -->
@@ -42,11 +43,17 @@
 
     <!-- Page footer -->
     <footer>
-      <p>Page footer</p>
+      <div class="icons">
+        <ul>
+          <li class="entypo-instagrem" alt="Instagram Icon"></li>
+          <li class="entypo-facebook-squared" alt="Facebook Icon"></li>
+          <li class="entypo-globe" alt="Language Icon"></li>
+        </ul>
+      </div>
     </footer>
 
-    <script type="text/javascript" src="js/home.js"></script>
-    <script type="text/javascript" src="js/products.js"></script>
+    <script type="text/javascript" src="js/home.mjs"></script>
+    <script type="text/javascript" src="js/products.mjs"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

@@ -7,6 +7,7 @@
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
+  font-size: 1.5rem;
 }
 
 // colors
@@ -14,7 +15,7 @@ $green: #687c40;
 $grey: #6D6E71;
 
 // dimensions
-$logoDia: 100px;
+$logoDia: 75px;
 
 // mixins
 @mixin full-page {
@@ -28,11 +29,11 @@ $logoDia: 100px;
   box-sizing: border-box;
   list-style-type: none;
   font-family: 'neutraText', sans-serif;
-  // font-weight: 300;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-  max-width: 1440px;
   width: 80vw;
   margin: auto;
   font-size: 16px;
@@ -41,64 +42,69 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: $logoDia / 2 + 10px;
-  color: $green;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50pt;
+  color: white;
   text-transform: uppercase;
-  font-size: 1rem;
-
-  .nav, .icons {
-    min-width: 33.3%;
+  font-size: .75rem;
+  font-weight: bold;
+  background-color: $green;
+  box-shadow: 0 -1px 10px -5px black;
+  z-index: 999;
+  line-height: normal;
+  .nav {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    div, a {
+      margin: 0 10px;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      span {
+        margin-top: 10px;
+      }
+    }
   }
 
   div, ul {
     display: flex;
-
     li {
       margin-left: 20px;
-    }
-  }
-
-  .icons li{
-    margin-left: 15px;
-    &:hover {
-      color: blue;
-    }
-  }
-}
-
-.nav {
-  display: flex;
-  order: 0;
-
-  ul {
-    display: none;
-  }
-  .menu, li {
-    &:hover {
-      color: red;
     }
   }
 }
 
 .logo {
-  order: 1;
+  display: none;
   height: $logoDia;
   width: $logoDia;
   flex-shrink: 0;
-  margin: 10px 0;
   border-radius: 50%;
   border: 3px solid $green;
-  align-self: flex-start;
+  align-self: flex-end;
   background-color: white;
-
 }
 
 .icons {
-  order: 3;
   justify-content: flex-end;
+  ul {
+    display: flex;
+  }
+  li {
+    margin-left: 15px;
+    &:hover {
+      color: blue;
+    }
+  }
 }
 
 .hero {
@@ -109,6 +115,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
 }
 
 article {
@@ -116,7 +128,8 @@ article {
 }
 
 p {
-  text-align: center;
+  text-align: left;
+  max-width: 70ch;
   // max-width: 80ch;
 }
 
@@ -124,7 +137,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   h2 {
     display: flex;
     text-transform: uppercase;
@@ -134,16 +146,12 @@ p {
     z-index: 99;
     align-items: center;
   }
-
   &-list {
-    // width: 100%;
     div {
       display: flex;
       width: 250px;
       height: 125px;
-      // border-radius: 7.5pc 7.5pc 0 0;
       border-radius: 125px 125px 0 0;
-      // border-radius: 30px;
       margin: 20px 0;
       align-items: center;
       justify-content: center;
@@ -169,21 +177,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50pt;
 }
 
 @media only screen and (min-width: 800px) {
   header {
-
-    .logo {
-      order: 0;
-    }
-
-    .nav {
-      order: 1;
-      .menu {display: none;}
-      ul {display: flex;}
-    }
-
     .icons {
       min-width: $logoDia;
     }
@@ -194,10 +192,6 @@ footer {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      div {
-        // margin-left: 10px;
-        // margin-left: 10px;
-      }
     }
   }
 }
