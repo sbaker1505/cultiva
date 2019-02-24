@@ -4,7 +4,7 @@ const Home = `
     </section>
 
     <section class="description">
-      <img src="/svg/icon.svg" alt="Cultiva logo icon" class="logo-icon">
+      <img src="svg/icon.svg" alt="Cultiva logo icon" class="logo-icon">
       <article class="intro">
         <div class="text">
           <h1>Who we are!</h1>
