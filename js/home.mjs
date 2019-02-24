@@ -1,6 +1,6 @@
 const Home = `
     <section class="hero">
-      <img src="/img/hero.jpg" alt="Hero Image for Cultiva">
+      <img src="img/hero.jpg" alt="Hero Image for Cultiva">
     </section>
 
     <section class="description">
