@@ -37,17 +37,6 @@ body {
   background-color: $white;
 }
 
-.logo {
-  display: none;
-  height: $logoDia;
-  width: $logoDia;
-  flex-shrink: 0;
-  border-radius: 50%;
-  border: 3px solid $green;
-  align-self: flex-end;
-  background-color: $white;
-}
-
 .icons {
   justify-content: flex-end;
   ul {

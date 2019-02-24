@@ -14,6 +14,53 @@ header {
   line-height: normal;
 }
 
+@media only screen and (min-width: 800px) {
+  header {
+    top: 0;
+    background-color: inherit;
+    color: #637d37;
+    font-size: 1rem;
+    box-shadow: none;
+    height: 75px;
+  }
+  header [class*="entypo-"] {
+    display: none;
+  }
+}
+
+header .nav {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+header .nav div, header .nav a {
+  margin: 0 10px;
+}
+
+header .nav a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 800px) {
+  header .nav a {
+    margin: 0 20px;
+  }
+}
+
+header .nav a:hover, header .nav a:active {
+  color: #d4d5d6;
+}
+
+header .nav a span {
+  margin-top: 10px;
+}
+
 header div, header ul {
   display: flex;
 }
@@ -22,31 +69,25 @@ header div li, header ul li {
   margin-left: 20px;
 }
 
-.nav {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+.logo {
+  display: none;
+  height: 150px;
+  width: 150px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  align-self: flex-start;
+  background-color: white;
+  z-index: 999;
 }
 
-.nav div, .nav a {
-  margin: 0 10px;
+.logo svg {
+  width: 100%;
 }
 
-.nav a {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav a:hover, .nav a:active {
-  color: #d4d5d6;
-}
-
-.nav a span {
-  margin-top: 10px;
+@media only screen and (min-width: 800px) {
+  .logo {
+    display: inherit;
+  }
 }
 
 .hero {
@@ -68,7 +109,7 @@ header div li, header ul li {
 }
 
 .description {
-  margin: 30px 0;
+  margin: 30px 0 60px 0;
 }
 
 .description img {
@@ -80,14 +121,6 @@ header div li, header ul li {
   flex-direction: column;
 }
 
-.intro .text h1 {
-  margin-top: 30px;
-}
-
-.intro p {
-  margin-top: 10px;
-}
-
 @media only screen and (min-width: 800px) {
   .intro {
     flex-direction: row;
@@ -97,6 +130,18 @@ header div li, header ul li {
   .intro .text {
     width: calc(50% - 20px);
   }
+}
+
+.intro .text h1 {
+  margin-top: 30px;
+}
+
+.intro p {
+  margin-top: 10px;
+}
+
+.intro p:not(:first-of-type) {
+  margin-top: 1.5rem;
 }
 
 /* entypo icons */
@@ -120,17 +165,6 @@ body {
   margin: auto;
   font-size: 16px;
   line-height: 1.5rem;
-  background-color: white;
-}
-
-.logo {
-  display: none;
-  height: 75px;
-  width: 75px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  border: 3px solid #637d37;
-  align-self: flex-end;
   background-color: white;
 }
 

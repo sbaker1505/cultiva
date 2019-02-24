@@ -1,3 +1,4 @@
+// main:../style.scss
 header {
   position: fixed;
   left: 0;
@@ -12,6 +13,40 @@ header {
   box-shadow: 0 -1px 10px -5px $black;
   z-index: 999;
   line-height: normal;
+  @include min800 {
+    top: 0;
+    background-color: inherit;
+    color: $green;
+    font-size: 1rem;
+    box-shadow: none;
+    height: $logoDia / 2;
+    [class*="entypo-"] {display: none;}
+  }
+  .nav {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    div, a {
+      margin: 0 10px;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      @include min800 {
+        margin: 0 20px;
+      }
+      &:hover, &:active {
+        color: $lt-grey;
+      }
+      span {
+        margin-top: 10px;
+      }
+    }
+  }
   div, ul {
     display: flex;
     li {
@@ -20,25 +55,19 @@ header {
   }
 }
 
-.nav {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  div, a {
-    margin: 0 10px;
+.logo {
+  display: none;
+  height: $logoDia;
+  width: $logoDia;
+  flex-shrink: 0;
+  border-radius: 50%;
+  align-self: flex-start;
+  background-color: $white;
+  z-index: 999;
+  svg {
+    width: 100%;
   }
-  a {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    &:hover, &:active {
-      color: $lt-grey;
-    }
-    span {
-      margin-top: 10px;
-    }
+  @include min800 {
+    display: inherit;
   }
 }
