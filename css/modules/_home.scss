@@ -1,0 +1,15 @@
+.hero {
+  @include full-page;
+  max-height: 75vw;
+  height: 500px;
+  background-color: $lt-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+}

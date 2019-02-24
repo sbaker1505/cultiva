@@ -1,4 +1,22 @@
-/* entypo */
+.hero {
+  width: 100vw;
+  margin: 0 -10vw;
+  max-height: 75vw;
+  height: 500px;
+  background-color: #d4d5d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+/* entypo icons */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
   font-size: 1.5rem;
@@ -93,25 +111,7 @@ header div li, header ul li {
 }
 
 .icons li:hover {
-  color: blue;
-}
-
-.hero {
-  width: 100vw;
-  margin: 0 -10vw;
-  max-height: 75vw;
-  height: 500px;
-  background-color: #d4d5d6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.hero img {
-  width: 100%;
-  min-height: 100%;
-  object-fit: cover;
+  color: #cad7b1;
 }
 
 article {

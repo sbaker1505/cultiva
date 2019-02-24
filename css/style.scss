@@ -1,26 +1,22 @@
+// Main Scss file
 
-// Fonts
-// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
-// @import "../font/icon.css";
-// @import url('http://weloveiconfonts.com/api/?family=entypo');
+// helpers
+@import 'helpers/mixins';
+@import 'helpers/variables';
 
-/* entypo */
+//modules
+@import 'modules/header';
+@import 'modules/home';
+@import 'modules/products';
+@import 'modules/images';
+@import 'modules/contact';
+@import 'modules/footer';
+
+
+/* entypo icons */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
   font-size: 1.5rem;
-}
-
-// colors
-$green: #687c40;
-$grey: #6D6E71;
-
-// dimensions
-$logoDia: 75px;
-
-// mixins
-@mixin full-page {
-  width: 100vw;
-  margin: 0 -10vw;
 }
 
 * {
@@ -38,7 +34,7 @@ body {
   margin: auto;
   font-size: 16px;
   line-height: 1.5rem;
-  background-color: white;
+  background-color: $white;
 }
 
 header {
@@ -47,12 +43,12 @@ header {
   bottom: 0;
   width: 100%;
   height: 50pt;
-  color: white;
+  color: $white;
   text-transform: uppercase;
   font-size: .75rem;
   font-weight: bold;
   background-color: $green;
-  box-shadow: 0 -1px 10px -5px black;
+  box-shadow: 0 -1px 10px -5px $black;
   z-index: 999;
   line-height: normal;
   .nav {
@@ -91,7 +87,7 @@ header {
   border-radius: 50%;
   border: 3px solid $green;
   align-self: flex-end;
-  background-color: white;
+  background-color: $white;
 }
 
 .icons {
@@ -102,26 +98,12 @@ header {
   li {
     margin-left: 15px;
     &:hover {
-      color: blue;
+      color: $lt-green;
     }
   }
 }
 
-.hero {
-  @include full-page;
-  max-height: 75vw;
-  height: 500px;
-  background-color: lighten($grey, 40);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  img {
-    width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-  }
-}
+
 
 article {
   margin-top: 30px;
@@ -130,7 +112,6 @@ article {
 p {
   text-align: left;
   max-width: 70ch;
-  // max-width: 80ch;
 }
 
 .products {
@@ -142,7 +123,7 @@ p {
     text-transform: uppercase;
     padding: 20px;
     height: 50px;
-    background-color: white;
+    background-color: $white;
     z-index: 99;
     align-items: center;
   }
@@ -167,7 +148,7 @@ hr {
   height: 1px;
   position: relative;
   top: 25px;
-  background-color: lighten($grey, 40);
+  background-color: $lt-grey;
 }
 
 footer {
