@@ -1,5 +1,8 @@
 const Products = `
   <article class="products">
+    <img src="/svg/microgreens.svg" alt="">
+    <img src="/svg/vegetales.svg" alt="">
+    <img src="/svg/flores.svg" alt="">
   <hr>
   <h2>Productos</h2>
   <div class="products-list">
