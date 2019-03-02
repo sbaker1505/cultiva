@@ -1,8 +1,8 @@
 
-let main = document.getElementById('main')
-main.innerHTML = Home
-
-const loadPage = (element) => {main.innerHTML = element}
+// let main = document.getElementById('main')
+// main.innerHTML = Home
+//
+// const loadPage = (element) => {main.innerHTML = element}
 
 
 // for (const link of links) {
