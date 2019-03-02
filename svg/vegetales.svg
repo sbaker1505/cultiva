@@ -15,14 +15,6 @@
         stroke-miterlimit: 10;
         stroke: url("#linear-gradient");
       }
-      .cls-5 {
-        fill: #fff;
-      }
-      <!-- .cls-6 {
-        font-size: 28px;
-        fill: #637d37;
-        font-family: UnionAgrochemCharkrapetch, Union Agrochem;
-      } -->
     </style>
     <clipPath id="clip-path" transform="translate(-134.35 15.33)">
       <circle class="cls-1" cx="280.59" cy="278.01" r="133.59"/>
@@ -482,6 +474,4 @@
     <path class="cls-3" d="M346.14,353.08a9.08,9.08,0,0,0-4.24-.51l-6.85.11a.15.15,0,0,0,0,.3l5.24-.09c1.82,0,4-.36,5.7.44.17.08.33-.18.15-.26Z" transform="translate(-134.35 15.33)"/>
   </g>
   <circle class="cls-4" cx="146.24" cy="293.34" r="133.59"/>
-  <!-- <rect class="cls-5" x="6.24" y="266.34" width="280" height="54"/> -->
-  <!-- <text class="cls-6" transform="translate(97.76 291.27)">VEGETALES<tspan x="-32.42" y="27">EXTRAORDINARIOS</tspan></text> -->
 </svg>

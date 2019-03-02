@@ -10,3 +10,5 @@ $black: black;
 
 // dimensions
 $logoDia: 150px;
+$productHeight: calc(100vh - 50pt - #{$logoDia});
+$altProductHeight: calc(100vh - (#{$logoDia} * 1.5));
