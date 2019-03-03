@@ -10,7 +10,8 @@ header {
   position: fixed;
   background-color: $green;
   box-shadow: 0 -1px 10px -5px $black; //refine color
-  font: uppercase bold .75rem/normal 'neutraText', sans-serif;
+  font: bold .75rem/normal 'neutraText', sans-serif;
+  text-transform: uppercase;
 
   @include min800 {
     top       : 0;

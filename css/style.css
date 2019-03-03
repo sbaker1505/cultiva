@@ -8,7 +8,8 @@ header {
   position: fixed;
   background-color: #637d37;
   box-shadow: 0 -1px 10px -5px black;
-  font: uppercase bold .75rem/normal 'neutraText', sans-serif;
+  font: bold .75rem/normal 'neutraText', sans-serif;
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 800px) {
@@ -161,67 +162,56 @@ header div li, header ul li {
   }
 }
 
+.products .svg-microgreens {
+  background: url("../svg/microgreens.svg");
+}
+
+.products .svg-flowers {
+  background: url("../svg/flores.svg");
+}
+
+.products .svg-veggy {
+  background: url("../svg/vegetables.svg");
+}
+
 .products [class*="svg-"] {
   margin: 10px;
   min-width: 250px;
-  width: "";
-  max-width: "";
+  width: auto;
+  max-width: auto;
   min-height: 250px;
-  height: "";
-  max-height: "";
+  height: auto;
+  max-height: auto;
   border-radius: 50%;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  background-size: cover;
 }
 
 @media only screen and (min-width: 800px) {
   .products [class*="svg-"] {
-    min-width: "";
+    min-width: auto;
     width: calc((80vw - 60px)/3);
-    max-width: "";
-    min-height: "";
+    max-width: auto;
+    min-height: auto;
     height: calc((80vw - 60px)/3);
-    max-height: "";
+    max-height: auto;
   }
 }
 
 .products [class*="svg-"] h2 {
-  width: 100%;
+  width: calc(100% + 10px);
   text-transform: uppercase;
   background-color: white;
   text-align: center;
   padding: 20px 0;
+  margin: 0 -5px;
   color: #637d37;
   font-weight: bold;
   z-index: 99;
-}
-
-.products [class*="svg-"] svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: "";
-  right: "";
-  min-width: 250px;
-  width: "";
-  max-width: "";
-  min-height: 250px;
-  height: "";
-  max-height: "";
-}
-
-@media only screen and (min-width: 800px) {
-  .products [class*="svg-"] svg {
-    min-width: "";
-    width: calc((80vw - 60px)/3);
-    max-width: "";
-    min-height: "";
-    height: calc((80vw - 60px)/3);
-    max-height: "";
-  }
 }
 
 .svg-microgreens svg .cls-1,
