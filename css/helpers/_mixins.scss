@@ -32,3 +32,8 @@
   bottom: $btm;
   right: $right;
 }
+
+@mixin transition ($a:all) {
+	transition: $a 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: $a;
+} 

@@ -16,20 +16,18 @@
 
 /* entypo icons */
 [class*="entypo-"]:before {
-  font-size  : 1.5rem;
   font-family: 'entypo', sans-serif;
+  font-size: 1.5rem;
 }
 
 * {
-  margin : 0;
+  margin: 0;
   padding: 0;
-  color  : inherit;
   box-sizing: border-box;
-  list-style-type:  none;
-  text-decoration:  none;
+  list-style-type: none;
   font-family: 'neutraText', sans-serif;
-  text-rendering:  geometricPrecision;
-  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -44,11 +42,6 @@ body {
   }
 }
 
-p {
-  max-width: 70ch;
-  text-align: left;
-}
-
 .icons {
   justify-content: flex-end;
   ul {
@@ -60,6 +53,11 @@ p {
       color: $lt-green;
     }
   }
+}
+
+p {
+  text-align: left;
+  max-width: 70ch;
 }
 
 // .products {
