@@ -39,6 +39,7 @@
     @include width (250px)
     @include height(250px)
     background-size: cover;
+    @include transition(background-color);
     &:hover, &:active {
       background-color: $green40;
     }
