@@ -1,1 +1,25 @@
 // main:../style.scss
+
+
+footer {
+  height  : $logoDia;
+  display : flex;
+  @include full-page;
+
+  align-items     : center;
+  justify-content : center;
+  background-color: $grey ;
+
+  .icons {
+    justify-content: flex-end;
+    ul {
+      display: flex;
+    }
+    li {
+      margin-left: 15px;
+      &:hover {
+        color: $green40;
+      }
+    }
+  }
+}

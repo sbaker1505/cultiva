@@ -8,19 +8,21 @@ header {
   z-index : 999;
   color   : $white;
   position: fixed;
+  text-transform  : uppercase;
   background-color: $green;
-  box-shadow: 0 -1px 10px -5px $black; //refine color
+  box-shadow      : 0 -1px 10px -5px $black;
   font: bold .75rem/normal 'neutraText', sans-serif;
-  text-transform: uppercase;
+
 
   @include min800 {
     top       : 0;
     color     : $green ;
     font-size : 1rem   ;
-    background: $white;
+    background: $white ;
     box-shadow: initial;
     height    : $logoDia / 2;
     [class*="entypo-"] {display: none}
+    box-shadow: 0 1px 10px -5px $black;
   }
 
   .nav {
@@ -68,11 +70,18 @@ header {
   border-radius: 50%;
   align-self   : flex-start;
   background   : $white;
+  @include transition;
 
-  svg {
-    width: 100%;
-  }
+  svg { width: 100%}
+
   @include min800 {
     display: inherit;
   }
+}
+
+.scroll-logo{
+  transform: translateY(-70px);
+  background: transparent;
+  svg > *{ opacity: 0 }
+  .cls-2 {opacity: 1  }
 }

@@ -1,16 +1,19 @@
 // main:../style.scss
 
 .products {
-  display: flex;
-  flex-direction: column;
+  margin         : 10px 0;
+  display        : flex;
+  flex-wrap      : wrap;
+  align-items    : center;
+  flex-direction : column;
   justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
+
   @include min800 {
-    flex-direction: row;
-    height: $altProductHeight;
     width: 100%;
+    margin-bottom  : 0;
+    flex-direction : row;
+    height: $altProductHeight;
+    margin-top:  $logoDia / 2;
     justify-content: space-between;
     margin-top: $logoDia / 2;
     margin-bottom: 0;
@@ -25,34 +28,38 @@
   .svg-veggy {
     background-image: url("../svg/vegetables.svg");
   }
+
   [class*="svg-"] {
-    margin: 10px;
-    @include width(250px)
-    @include height(250px)
-    border-radius: 50%;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
+    margin         : 10px;
+    display        : flex;
+    flex-shrink    : 0;
+    align-items    : center;
+    border-radius  : 50%;
     justify-content: center;
-    position: relative;
+    @include width (250px)
+    @include height(250px)
     background-size: cover;
     &:hover, &:active {
       background-color: $green40;
     }
     @include min800 {
-      @include width($w: calc((80vw - 60px)/3))
+      @include width ($w: calc((80vw - 60px)/3))
       @include height($h: calc((80vw - 60px)/3))
     }
+
     h2 {
-      width: calc(100% + 10px);
-      text-transform: uppercase;
-      background-color: $white;
-      text-align: center;
+      color  : $green;
+      margin : 0 -5px;
       padding: 20px 0;
-      margin: 0 -5px;
-      color: $green;
-      font-weight: bold;
-      z-index: 99;
+      width  : calc(100% + 10px);
+      text-align      : center;
+      font-weight     : bold;
+      text-transform  : uppercase;
+      background-color: $white;
     }
   }
+
+  .svg-veggy       { background: url("../svg/vegetables.svg") }
+  .svg-flowers     { background: url("../svg/flores.svg") }
+  .svg-microgreens { background: url("../svg/microgreens.svg") }
 }
