@@ -9,25 +9,17 @@
   justify-content: space-between;
 
   @include min800 {
-    width: 100%;
+    width          : 100%;
     margin-bottom  : 0;
     flex-direction : row;
-    height: $altProductHeight;
-    margin-top:  $logoDia / 2;
+    height         : $altProductHeight;
+    margin-top     : $logoDia / 2;
     justify-content: space-between;
-    margin-top: $logoDia / 2;
-    margin-bottom: 0;
     // background-color: red;
   }
-  .svg-microgreens {
-    background-image: url("../svg/microgreens.svg");
-  }
-  .svg-flowers {
-    background-image: url("../svg/flores.svg");
-  }
-  .svg-veggy {
-    background-image: url("../svg/vegetables.svg");
-  }
+  .svg-microgreens { background-image: url("../svg/microgreens.svg"); }
+  .svg-flowers     { background-image: url("../svg/flores.svg"); }
+  .svg-veggy       { background-image: url("../svg/vegetables.svg"); }
 
   [class*="svg-"] {
     margin         : 10px;
@@ -36,16 +28,14 @@
     align-items    : center;
     border-radius  : 50%;
     justify-content: center;
-    @include width (250px)
-    @include height(250px)
     background-size: cover;
+    @include size    (250px, 250px);
     @include transition(background-color);
     &:hover, &:active {
       background-color: $green40;
     }
     @include min800 {
-      @include width ($w: calc((80vw - 60px)/3))
-      @include height($h: calc((80vw - 60px)/3))
+      @include size  (calc((80vw - 60px)/3), calc((80vw - 60px)/3));
     }
 
     h2 {
