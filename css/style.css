@@ -163,15 +163,15 @@ header div li, header ul li {
 }
 
 .products .svg-microgreens {
-  background: url("../svg/microgreens.svg");
+  background-image: url("../svg/microgreens.svg");
 }
 
 .products .svg-flowers {
-  background: url("../svg/flores.svg");
+  background-image: url("../svg/flores.svg");
 }
 
 .products .svg-veggy {
-  background: url("../svg/vegetables.svg");
+  background-image: url("../svg/vegetables.svg");
 }
 
 .products [class*="svg-"] {
@@ -189,6 +189,10 @@ header div li, header ul li {
   justify-content: center;
   position: relative;
   background-size: cover;
+}
+
+.products [class*="svg-"]:hover, .products [class*="svg-"]:active {
+  background-color: #c6d9a8;
 }
 
 @media only screen and (min-width: 800px) {
