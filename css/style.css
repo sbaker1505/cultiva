@@ -1,26 +1,23 @@
 header {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 50pt;
+  z-index: 999;
   color: white;
-  text-transform: uppercase;
-  font-size: .75rem;
-  font-weight: bold;
+  position: fixed;
   background-color: #637d37;
   box-shadow: 0 -1px 10px -5px black;
-  z-index: 999;
-  line-height: normal;
+  font: uppercase bold .75rem/normal 'neutraText', sans-serif;
 }
 
 @media only screen and (min-width: 800px) {
   header {
     top: 0;
-    background-color: inherit;
     color: #637d37;
     font-size: 1rem;
-    box-shadow: none;
+    background: initial;
+    box-shadow: initial;
     height: 75px;
   }
   header [class*="entypo-"] {
@@ -29,10 +26,10 @@ header {
 }
 
 header .nav {
-  display: flex;
   height: 100%;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 header .nav div, header .nav a {
@@ -40,11 +37,11 @@ header .nav div, header .nav a {
 }
 
 header .nav a {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 800px) {
@@ -71,13 +68,13 @@ header div li, header ul li {
 
 .logo {
   display: none;
-  height: 150px;
+  z-index: 999;
   width: 150px;
+  height: 150px;
   flex-shrink: 0;
   border-radius: 50%;
   align-self: flex-start;
-  background-color: white;
-  z-index: 999;
+  background: white;
 }
 
 .logo svg {
@@ -146,18 +143,20 @@ header div li, header ul li {
 
 /* entypo icons */
 [class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
   font-size: 1.5rem;
+  font-family: 'entypo', sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
+  color: inherit;
   box-sizing: border-box;
   list-style-type: none;
-  font-family: 'neutraText', sans-serif;
   text-decoration: none;
-  color: inherit;
+  font-family: 'neutraText', sans-serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -166,6 +165,11 @@ body {
   font-size: 16px;
   line-height: 1.5rem;
   background-color: white;
+}
+
+p {
+  max-width: 70ch;
+  text-align: left;
 }
 
 .icons {
@@ -184,18 +188,13 @@ body {
   color: #c6d9a8;
 }
 
-p {
-  text-align: left;
-  max-width: 70ch;
-}
-
 footer {
-  background-color: #6D6E71;
+  display: flex;
   height: 150px;
   width: 100vw;
   margin: 0 -10vw;
-  display: flex;
-  justify-content: center;
   align-items: center;
   padding-bottom: 50pt;
+  background-color: #6D6E71;
+  justify-content: center;
 }

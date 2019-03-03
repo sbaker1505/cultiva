@@ -1,12 +1,12 @@
 // main:../style.scss
 // colors
-$green: #637d37;
+$yellow  : #dece25;
+$green   : #637d37;
 $lt-green: lighten($green, 40);
-$yellow: #dece25;
-$grey: #6D6E71;
-$lt-grey: lighten($grey, 40);
-$white: white;
-$black: black;
+$grey    : #6D6E71;  // would recommend calling grey800, same with green
+$lt-grey : lighten($grey, 40); // would recommend calling grey400
+$black   : black;
+$white   : white;
 
 // dimensions
 $logoDia: 150px;
