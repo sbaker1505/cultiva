@@ -16,7 +16,7 @@ header {
     top       : 0;
     color     : $green ;
     font-size : 1rem   ;
-    background: initial;
+    background: $white;
     box-shadow: initial;
     height    : $logoDia / 2;
     [class*="entypo-"] {display: none}
