@@ -6,10 +6,10 @@ header {
   z-index: 999;
   color: white;
   position: fixed;
+  text-transform: uppercase;
   background-color: #637d37;
   box-shadow: 0 -1px 10px -5px black;
   font: bold .75rem/normal 'neutraText', sans-serif;
-  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 800px) {
@@ -89,15 +89,15 @@ header div li, header ul li {
 }
 
 .hero {
+  height: 500px;
+  display: flex;
+  overflow: hidden;
+  max-height: 75vw;
+  align-items: center;
   width: 100vw;
   margin: 0 -10vw;
-  max-height: 75vw;
-  height: 500px;
-  background-color: #d4d5d6;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  background-color: #d4d5d6;
 }
 
 .hero img {
@@ -121,9 +121,9 @@ header div li, header ul li {
 
 @media only screen and (min-width: 800px) {
   .intro {
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
   }
   .intro .text {
     width: calc(50% - 20px);
@@ -143,51 +143,38 @@ header div li, header ul li {
 }
 
 .products {
+  margin: 10px 0;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
 }
 
 @media only screen and (min-width: 800px) {
   .products {
+    width: 100%;
+    margin-bottom: 0;
     flex-direction: row;
     height: calc(100vh - (150px * 1.5));
-    width: 100%;
-    justify-content: space-between;
     margin-top: 75px;
-    margin-bottom: 0;
+    justify-content: space-between;
   }
-}
-
-.products .svg-microgreens {
-  background: url("../svg/microgreens.svg");
-}
-
-.products .svg-flowers {
-  background: url("../svg/flores.svg");
-}
-
-.products .svg-veggy {
-  background: url("../svg/vegetables.svg");
 }
 
 .products [class*="svg-"] {
   margin: 10px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
   min-width: 250px;
   width: auto;
   max-width: auto;
   min-height: 250px;
   height: auto;
   max-height: auto;
-  border-radius: 50%;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
   background-size: cover;
 }
 
@@ -203,15 +190,26 @@ header div li, header ul li {
 }
 
 .products [class*="svg-"] h2 {
+  color: #637d37;
+  margin: 0 -5px;
+  padding: 20px 0;
   width: calc(100% + 10px);
+  text-align: center;
+  font-weight: bold;
   text-transform: uppercase;
   background-color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin: 0 -5px;
-  color: #637d37;
-  font-weight: bold;
-  z-index: 99;
+}
+
+.products .svg-veggy {
+  background: url("../svg/vegetables.svg");
+}
+
+.products .svg-flowers {
+  background: url("../svg/flores.svg");
+}
+
+.products .svg-microgreens {
+  background: url("../svg/microgreens.svg");
 }
 
 .svg-microgreens svg .cls-1,
@@ -282,18 +280,17 @@ header div li, header ul li {
 
 /* entypo icons */
 [class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-  font-size: 1.5rem;
+  font: 1.5rem 'entypo', sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
+  color: inherit;
   box-sizing: border-box;
+  text-decoration: none;
   list-style-type: none;
   font-family: 'neutraText', sans-serif;
-  text-decoration: none;
-  color: inherit;
 }
 
 body {
@@ -301,14 +298,19 @@ body {
   margin: auto;
   font-size: 16px;
   line-height: 1.5rem;
-  background-color: white;
   margin-bottom: 50pt;
+  background-color: white;
 }
 
 @media only screen and (min-width: 800px) {
   body {
     margin-bottom: auto;
   }
+}
+
+p {
+  text-align: left;
+  max-width: 70ch;
 }
 
 .icons {
@@ -327,17 +329,12 @@ body {
   color: #c6d9a8;
 }
 
-p {
-  text-align: left;
-  max-width: 70ch;
-}
-
 footer {
-  background-color: #6D6E71;
   height: 150px;
+  display: flex;
   width: 100vw;
   margin: 0 -10vw;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: #6D6E71;
 }
