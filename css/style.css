@@ -62,18 +62,18 @@ header {
   }
 }
 
-header .nav {
+.nav {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-header .nav div, header .nav a {
+.nav div, .nav a {
   margin: 0 10px;
 }
 
-header .nav a {
+.nav-link {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -84,25 +84,17 @@ header .nav a {
 }
 
 @media only screen and (min-width: 800px) {
-  header .nav a {
+  .nav-link {
     margin: 0 20px;
   }
 }
 
-header .nav a:hover, header .nav a:active {
+.nav-link:hover, .nav-link:active {
   color: #d4d5d6;
 }
 
-header .nav a span {
+.nav-link span {
   margin-top: 10px;
-}
-
-header div, header ul {
-  display: flex;
-}
-
-header div li, header ul li {
-  margin-left: 20px;
 }
 
 .logo {

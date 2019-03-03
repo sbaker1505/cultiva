@@ -12,7 +12,6 @@ header {
   box-shadow      : 0 -1px 10px -5px $black;
   font: bold .75rem/normal 'neutraText', sans-serif;
 
-
   @include min800 {
     top       : 0;
     color     : $green ;
@@ -23,40 +22,34 @@ header {
     [class*="entypo-"] {display: none}
     box-shadow: 0 1px 10px -5px $black;
   }
+}
 
-  .nav {
+.nav {
+  height : 100%;
+  display: flex;
+  align-items    : center;
+  justify-content: center;
+
+  div, a {
+    margin: 0 10px;
+  }
+
+  &-link {
     height : 100%;
     display: flex;
+    flex-direction : column;
     align-items    : center;
     justify-content: center;
+    @include transition(color);
 
-    div, a {
-      margin: 0 10px;
+    @include min800 {
+      margin: 0 20px;
     }
-
-    a {
-      height : 100%;
-      display: flex;
-      flex-direction : column;
-      align-items    : center;
-      justify-content: center;
-      @include transition(color);
-
-      @include min800 {
-        margin: 0 20px;
-      }
-      &:hover, &:active {
-        color: $grey40;
-      }
-      span {
-        margin-top: 10px;
-      }
+    &:hover, &:active {
+      color: $grey40;
     }
-  }
-  div, ul {
-    display: flex;
-    li {
-      margin-left: 20px;
+    span {
+      margin-top: 10px;
     }
   }
 }
