@@ -1,0 +1,61 @@
+// main:../style.scss
+
+// microgreens
+.svg-microgreens {
+  svg {
+    .cls-1,
+    .cls-4 {
+      fill: none;
+    }
+    .cls-2 {
+      clip-path: url("#clip-path1");
+    }
+    .cls-3 {
+      fill: #6d6e71;
+    }
+    .cls-4 {
+      stroke-miterlimit: 10;
+      stroke: url("#linear-gradient1");
+    }
+  }
+}
+
+// vegetales
+.svg-veggy {
+  svg {
+    .cls-1,
+    .cls-4 {
+      fill: none;
+    }
+    .cls-2 {
+      clip-path: url("#clip-path2");
+    }
+    .cls-3 {
+      fill: #6d6e71;
+    }
+    .cls-4 {
+      stroke-miterlimit: 10;
+      stroke: url("#linear-gradient2");
+    }
+  }
+}
+
+// flowers
+.svg-flowers {
+  svg {
+    .cls-1,
+    .cls-4 {
+      fill: none;
+    }
+    .cls-2 {
+      clip-path: url("#clip-path3");
+    }
+    .cls-3 {
+      fill: #6d6e71;
+    }
+    .cls-4 {
+      stroke-miterlimit: 10;
+      stroke: url("#linear-gradient3");
+    }
+  }
+}

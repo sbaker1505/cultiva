@@ -11,7 +11,24 @@
   }
 }
 
-@mixin transition ($a:all) {
-	transition: $a 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  will-change: $a;
+// widths
+@mixin width($mw: "", $w: "", $xw: "") {
+  min-width: $mw;
+  width: $w;
+  max-width: $xw;
+}
+// height
+@mixin height($mh: "", $h: "", $xh: "") {
+  min-height: $mh;
+  height: $h;
+  max-height: $xh;
+}
+
+// Positioning
+@mixin pAbsolute ($top: 0, $left: 0, $btm: "", $right: ""){
+  position: absolute;
+  top: $top;
+  left: $left;
+  bottom: $btm;
+  right: $right;
 }

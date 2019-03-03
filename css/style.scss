@@ -11,6 +11,7 @@
 @import 'modules/images';
 @import 'modules/contact';
 @import 'modules/footer';
+@import 'modules/svg-styles';
 
 
 /* entypo icons */
@@ -37,6 +38,10 @@ body {
   font-size: 16px;
   line-height: 1.5rem;
   background-color: $white;
+  margin-bottom: 50pt;
+  @include min800 {
+    margin-bottom: auto;
+  }
 }
 
 p {
@@ -95,13 +100,12 @@ p {
 // }
 
 footer {
-  display: flex ;
-  height : 150px;
+  background-color: $grey;
+  height: $logoDia;
   @include full-page;
-  align-items     : center;
-  padding-bottom  : 50pt  ;
-  background-color: $grey ;
-  justify-content : center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 800px) {
