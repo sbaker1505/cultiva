@@ -228,6 +228,32 @@ header div li, header ul li {
   background: url("../svg/microgreens.svg");
 }
 
+footer {
+  height: 150px;
+  display: flex;
+  width: 100vw;
+  margin: 0 -10vw;
+  align-items: center;
+  justify-content: center;
+  background-color: #6D6E71;
+}
+
+footer .icons {
+  justify-content: flex-end;
+}
+
+footer .icons ul {
+  display: flex;
+}
+
+footer .icons li {
+  margin-left: 15px;
+}
+
+footer .icons li:hover {
+  color: #c6d9a8;
+}
+
 .svg-microgreens svg .cls-1,
 .svg-microgreens svg .cls-3,
 .svg-microgreens svg .cls-4 {
@@ -327,30 +353,4 @@ body {
 p {
   text-align: left;
   max-width: 70ch;
-}
-
-.icons {
-  justify-content: flex-end;
-}
-
-.icons ul {
-  display: flex;
-}
-
-.icons li {
-  margin-left: 15px;
-}
-
-.icons li:hover {
-  color: #c6d9a8;
-}
-
-footer {
-  height: 150px;
-  display: flex;
-  width: 100vw;
-  margin: 0 -10vw;
-  align-items: center;
-  justify-content: center;
-  background-color: #6D6E71;
 }
