@@ -2,9 +2,9 @@
 // colors
 $yellow  : #dece25;
 $green   : #637d37;
-$lt-green: lighten($green, 40);
+$green40 : lighten($green, 40);
 $grey    : #6D6E71;  // would recommend calling grey800, same with green
-$lt-grey : lighten($grey, 40); // would recommend calling grey400
+$grey40  : lighten($grey, 40); // would recommend calling grey400
 $black   : black;
 $white   : white;
 
