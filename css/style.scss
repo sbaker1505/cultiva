@@ -4,15 +4,6 @@
 @import 'helpers/mixins';
 @import 'helpers/variables';
 
-//modules
-@import 'modules/header';
-@import 'modules/home';
-@import 'modules/products';
-@import 'modules/images';
-@import 'modules/contact';
-@import 'modules/footer';
-
-
 /* entypo icons */
 [class*="entypo-"]:before { font: 1.5rem 'entypo', sans-serif }
 
@@ -43,3 +34,11 @@ p {
   text-align: left;
   max-width: 70ch;
 }
+
+//modules
+@import 'modules/header';
+@import 'modules/home';
+@import 'modules/products';
+@import 'modules/images';
+@import 'modules/contact';
+@import 'modules/footer';
