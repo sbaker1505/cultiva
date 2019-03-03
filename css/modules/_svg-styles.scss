@@ -4,18 +4,22 @@
 .svg-microgreens {
   svg {
     .cls-1,
+    .cls-3,
     .cls-4 {
       fill: none;
     }
     .cls-2 {
-      clip-path: url("#clip-path1");
+      fill: #6d6e71;
     }
     .cls-3 {
-      fill: #6d6e71;
+      stroke: #6d6e71;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 0;
     }
     .cls-4 {
       stroke-miterlimit: 10;
-      stroke: url("#linear-gradient1");
+      stroke: url("#linear-gradient");
     }
   }
 }
@@ -24,18 +28,22 @@
 .svg-veggy {
   svg {
     .cls-1,
+    .cls-3,
     .cls-4 {
       fill: none;
     }
     .cls-2 {
-      clip-path: url("#clip-path2");
+      fill: #6d6e71;
     }
     .cls-3 {
-      fill: #6d6e71;
+      stroke: #6d6e71;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 0;
     }
     .cls-4 {
       stroke-miterlimit: 10;
-      stroke: url("#linear-gradient2");
+      stroke: url("#linear-gradient");
     }
   }
 }
@@ -44,18 +52,22 @@
 .svg-flowers {
   svg {
     .cls-1,
+    .cls-3,
     .cls-4 {
       fill: none;
     }
     .cls-2 {
-      clip-path: url("#clip-path3");
+      fill: #6d6e71;
     }
     .cls-3 {
-      fill: #6d6e71;
+      stroke: #6d6e71;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 0;
     }
     .cls-4 {
       stroke-miterlimit: 10;
-      stroke: url("#linear-gradient3");
+      stroke: url("#linear-gradient");
     }
   }
 }

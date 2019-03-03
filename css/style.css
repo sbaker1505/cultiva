@@ -169,7 +169,6 @@ header div li, header ul li {
   min-height: 250px;
   height: "";
   max-height: "";
-  background-color: wheat;
   border-radius: 50%;
   flex-shrink: 0;
   display: flex;
@@ -214,58 +213,81 @@ header div li, header ul li {
   max-height: "";
 }
 
+@media only screen and (min-width: 800px) {
+  .products [class*="svg-"] svg {
+    min-width: "";
+    width: calc((80vw - 60px)/3);
+    max-width: "";
+    min-height: "";
+    height: calc((80vw - 60px)/3);
+    max-height: "";
+  }
+}
+
 .svg-microgreens svg .cls-1,
+.svg-microgreens svg .cls-3,
 .svg-microgreens svg .cls-4 {
   fill: none;
 }
 
 .svg-microgreens svg .cls-2 {
-  clip-path: url("#clip-path1");
+  fill: #6d6e71;
 }
 
 .svg-microgreens svg .cls-3 {
-  fill: #6d6e71;
+  stroke: #6d6e71;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0;
 }
 
 .svg-microgreens svg .cls-4 {
   stroke-miterlimit: 10;
-  stroke: url("#linear-gradient1");
+  stroke: url("#linear-gradient");
 }
 
 .svg-veggy svg .cls-1,
+.svg-veggy svg .cls-3,
 .svg-veggy svg .cls-4 {
   fill: none;
 }
 
 .svg-veggy svg .cls-2 {
-  clip-path: url("#clip-path2");
+  fill: #6d6e71;
 }
 
 .svg-veggy svg .cls-3 {
-  fill: #6d6e71;
+  stroke: #6d6e71;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0;
 }
 
 .svg-veggy svg .cls-4 {
   stroke-miterlimit: 10;
-  stroke: url("#linear-gradient2");
+  stroke: url("#linear-gradient");
 }
 
 .svg-flowers svg .cls-1,
+.svg-flowers svg .cls-3,
 .svg-flowers svg .cls-4 {
   fill: none;
 }
 
 .svg-flowers svg .cls-2 {
-  clip-path: url("#clip-path3");
+  fill: #6d6e71;
 }
 
 .svg-flowers svg .cls-3 {
-  fill: #6d6e71;
+  stroke: #6d6e71;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0;
 }
 
 .svg-flowers svg .cls-4 {
   stroke-miterlimit: 10;
-  stroke: url("#linear-gradient3");
+  stroke: url("#linear-gradient");
 }
 
 /* entypo icons */

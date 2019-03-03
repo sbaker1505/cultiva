@@ -20,7 +20,7 @@
     margin: 10px;
     @include width(250px)
     @include height(250px)
-    background-color: wheat;
+    // background-color: wheat;
     border-radius: 50%;
     flex-shrink: 0;
     display: flex;
@@ -45,6 +45,10 @@
       @include pAbsolute();
       @include width(250px);
       @include height(250px);
+      @include min800 {
+        @include width($w: calc((80vw - 60px)/3))
+        @include height($h: calc((80vw - 60px)/3))
+      }
     }
   }
 }
