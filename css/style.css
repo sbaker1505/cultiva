@@ -43,7 +43,7 @@ header {
   position: fixed;
   text-transform: uppercase;
   background-color: #637d37;
-  box-shadow: 0 -1px 10px -5px black;
+  box-shadow: 0 -1px 10px -5px #0f1308;
   font: bold .75rem/normal 'neutraText', sans-serif;
 }
 
@@ -55,7 +55,7 @@ header {
     background: white;
     box-shadow: initial;
     height: 75px;
-    box-shadow: 0 1px 10px -5px black;
+    box-shadow: 0 1px 10px -5px #0f1308;
   }
   header [class*="entypo-"] {
     display: none;
@@ -90,7 +90,7 @@ header {
 }
 
 .nav-link:hover, .nav-link:active {
-  color: #d4d5d6;
+  color: #0f1308;
 }
 
 .nav-link span {
@@ -134,7 +134,7 @@ header {
 }
 
 .on-page {
-  color: #d4d5d6;
+  color: #0f1308;
 }
 
 .hero {
