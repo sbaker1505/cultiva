@@ -234,18 +234,6 @@ header div li, header ul li {
   background-color: white;
 }
 
-.products .svg-veggy {
-  background: url("../svg/vegetables.svg");
-}
-
-.products .svg-flowers {
-  background: url("../svg/flores.svg");
-}
-
-.products .svg-microgreens {
-  background: url("../svg/microgreens.svg");
-}
-
 footer {
   height: 150px;
   display: flex;
