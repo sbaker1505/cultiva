@@ -106,6 +106,10 @@ header div li, header ul li {
   opacity: 1;
 }
 
+.on-page {
+  color: #d4d5d6;
+}
+
 .hero {
   height: 500px;
   display: flex;
