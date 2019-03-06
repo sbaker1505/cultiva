@@ -1,0 +1,44 @@
+// main:../style.scss
+
+.product-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  color: $green;
+  text-transform: uppercase;
+  @include min800 {
+    margin-top: $logoDia + 50px;
+  }
+  h3, p {
+    text-transform: none;
+  }
+  img {
+    @include size(100%, 200px);
+    border: 5px solid $green;
+  }
+  &-title {
+    margin-bottom: 20px;
+  }
+}
+
+.product-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.product-item {
+  @include size(100%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $grey40;
+}
+
+.taste, .look {
+  // display: none;
+}
