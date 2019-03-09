@@ -10,12 +10,11 @@
     <title>Cultiva | Products | Microgreens</title>
   </head>
 
-  <body>
+  <body onload="products('microgreens');">
     <!-- Page header -->
     <header>
       <!-- navigation -->
       <nav class="nav">
-        <!-- <div class="entypo-menu menu"></div> -->
         <a href="../index.html" class="nav-link">
           <div class="entypo-home"></div>
           <span>Home</span>
@@ -535,9 +534,9 @@
     <main id='main' name="main">
       <section class="product-page">
         <h2 class="product-page-title">Microgreens</h2>
-        <article class="product-list">
-          <div class="product-item">
-            <img src="#" alt="">
+        <article id="productList" class="product-list">
+          <!-- <div class="product-item">
+            <img src="../img/microgreens/acedera.jpg" alt="">
             <h3>Item Name</h3>
             <p class="taste">Taste</p>
             <p class="look">Look</p>
@@ -595,7 +594,7 @@
             <h3>Item Name</h3>
             <p class="taste">Taste</p>
             <p class="look">Look</p>
-          </div>
+          </div> -->
         </article>
       </section>
     </main>
@@ -611,6 +610,7 @@
       </div>
     </footer>
 
+    <script type="text/javascript" src="../js/catalog.js"></script>
     <script type="text/javascript" src="../js/index.js"></script>
   </body>
 </html>
