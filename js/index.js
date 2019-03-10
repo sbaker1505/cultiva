@@ -29,12 +29,16 @@ function products(type) {
 }
 
 function showProductInfo(id){
-  if(document.querySelector('div.show') || document.querySelector('div.click')) {
-    document.querySelector('div.click').classList.remove('click')
-    document.querySelector('div.show').classList.remove('show')
-  }
   const item = document.getElementById(id);
-  item.classList.toggle('click')
-  item.children[2].classList.toggle('show')
-  console.log(item)
+  const show = document.querySelector('div.show');
+  const highlight = document.querySelector('div.highlight');
+  // if (highlight && show){
+  //   highlight.classList.remove('highlight')
+  //   show.classList.remove('show')
+  //   num = id
+  //   console.log(highlight, show, num)
+  // }
+  item.classList.toggle('highlight');
+  item.children[2].classList.toggle('show');
+  console.log(highlight, show, num)
 }

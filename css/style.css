@@ -310,10 +310,6 @@ header {
   display: none;
 }
 
-.click {
-  box-shadow: 0 5px 10px black;
-}
-
 .show {
   display: inherit;
 }
