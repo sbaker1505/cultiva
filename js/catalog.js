@@ -3,7 +3,7 @@ const catalog = {
     {
       name: {     en: 'English name (Acedera)',
                   es: 'Acedera'},
-      id: 0001,
+      id: '0001',
       image: ['acedera.jpg'],
       keywords: [],
       discription: {
@@ -15,7 +15,7 @@ const catalog = {
     },{
       name: {     en: 'English name (Acelga Arco Iris)',
                   es: 'Acelga Arco Iris'},
-      id: 0002,
+      id: '0002',
       image: ['acelga_arco_iris.jpg'],
       keywords: [],
       discription: {
@@ -27,7 +27,7 @@ const catalog = {
     },{
       name: {     en: 'English name (Albahaca Limón)',
                   es: 'Albahaca Limón'},
-      id: 0003,
+      id: '0003',
       image: ['albahaca_limon.jpg'],
       keywords: [],
       discription: {
@@ -39,7 +39,7 @@ const catalog = {
     },{
       name: {     en: 'English name (Albahaca Morada)',
                   es: 'Albahaca Morada'},
-      id: 0004,
+      id: '0004',
       image: ['albahaca_morada.jpg'],
       keywords: [],
       discription: {
@@ -51,7 +51,7 @@ const catalog = {
     },{
       name: {     en: 'English name (Amaranto Rojo)',
                   es: 'Amaranto Rojo'},
-      id: 0005,
+      id: '0005',
       image: ['amaranto.jpg'],
       keywords: [],
       discription: {
@@ -63,7 +63,7 @@ const catalog = {
     },{
       name: {     en: 'English name (Anís)',
                   es: 'Anís'},
-      id: 0006,
+      id: '0006',
       image: ['anis.jpg'],
       keywords: [],
       discription: {

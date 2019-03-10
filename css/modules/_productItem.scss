@@ -11,12 +11,8 @@
   @include min800 {
     margin-top: $logoDia + 50px;
   }
-  h3, p {
+  p {
     text-transform: none;
-  }
-  img {
-    @include size(100%, 200px);
-    border: 5px solid $green;
   }
   &-title {
     margin-bottom: 20px;
@@ -32,13 +28,24 @@
 
 .product-item {
   @include size(100%, auto);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $grey40;
+  display: grid;
+  grid-template-rows: 200px 40px;
+  cursor: pointer;
+  img, h3 {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
 }
 
-.taste, .look {
-  // display: none;
+.description {
+  display: none;
+}
+
+.click {
+  box-shadow: 0 5px 10px black;
+}
+
+.show {
+  display: inherit;
 }

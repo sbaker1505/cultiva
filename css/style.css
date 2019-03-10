@@ -31,6 +31,7 @@ body {
 p {
   text-align: left;
   max-width: 70ch;
+  width: 100%;
 }
 
 header {
@@ -276,14 +277,8 @@ header {
   }
 }
 
-.product-page h3, .product-page p {
+.product-page p {
   text-transform: none;
-}
-
-.product-page img {
-  width: 100%;
-  height: 200px;
-  border: 5px solid #637d37;
 }
 
 .product-page-title {
@@ -300,11 +295,27 @@ header {
 .product-item {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #d4d5d6;
+  display: grid;
+  grid-template-rows: 200px 40px;
+  cursor: pointer;
+}
+
+.product-item img, .product-item h3 {
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.description {
+  display: none;
+}
+
+.click {
+  box-shadow: 0 5px 10px black;
+}
+
+.show {
+  display: inherit;
 }
 
 footer {
