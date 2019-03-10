@@ -34,12 +34,12 @@ p {
   width: 100%;
 }
 
-header {
+.header-nav {
   left: 0;
   bottom: 0;
   width: 100%;
   height: 50pt;
-  z-index: 999;
+  z-index: 99;
   color: white;
   position: fixed;
   text-transform: uppercase;
@@ -49,18 +49,97 @@ header {
 }
 
 @media only screen and (min-width: 800px) {
-  header {
-    top: 0;
+  .header-nav {
+    top: 30px;
     color: #637d37;
     font-size: 1rem;
     background: white;
     box-shadow: initial;
     height: 75px;
     box-shadow: 0 1px 10px -5px #0f1308;
+    transition-property: transform;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform;
   }
-  header [class*="entypo-"] {
+  .header-nav [class*="entypo-"] {
     display: none;
   }
+}
+
+@media only screen and (min-width: 800px) {
+  .scroll {
+    transform: translateY(-30px);
+  }
+}
+
+.lang {
+  position: fixed;
+  background-color: #c6d9a8;
+  color: #0f1308;
+  font-weight: bold;
+  bottom: 50pt;
+  right: 20px;
+  width: 60pt;
+  height: 30pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-transform: none;
+  font-size: 1rem;
+  z-index: 10;
+  transition-property: transform, background-color, color;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: transform, background-color, color;
+}
+
+.lang-scroll {
+  transform: translateY(50pt);
+  background-color: transparent;
+  color: transparent;
+}
+
+@media only screen and (min-width: 800px) {
+  .lang {
+    top: 0;
+    bottom: auto;
+    right: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #d4d5d6;
+    text-transform: inherit;
+    font-size: .8rem;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+  .lang-scroll {
+    transform: translateY(-30px);
+  }
+}
+
+.lang div {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .lang div {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.lang .hide {
+  display: none;
 }
 
 .nav {
@@ -80,7 +159,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-property: color;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   will-change: color;
 }
 
@@ -100,14 +181,16 @@ header {
 
 .logo {
   display: none;
-  z-index: 999;
+  z-index: 99;
   width: 150px;
   height: 150px;
   flex-shrink: 0;
   border-radius: 50%;
   align-self: flex-start;
   background: white;
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   will-change: all;
 }
 
@@ -235,7 +318,9 @@ header {
   background-size: cover;
   width: 250px;
   height: 250px;
-  transition: background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-property: background-color;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   will-change: background-color;
 }
 
@@ -334,7 +419,9 @@ footer .icons ul {
 
 footer .icons li {
   margin-left: 15px;
-  transition: color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-property: color;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   will-change: color;
 }
 

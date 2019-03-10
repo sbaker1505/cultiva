@@ -1,9 +1,17 @@
 
 window.addEventListener('scroll', function() {
   let logo = document.querySelector('.logo')
-  pageYOffset >= 20 ?
-    logo.classList.add   ("scroll-logo"):
-    logo.classList.remove("scroll-logo")
+  let lang = document.querySelector('.lang')
+  let nav = document.querySelector('.header-nav')
+  pageYOffset >= 20
+    ? logo.classList.add   ("scroll-logo")
+    : logo.classList.remove("scroll-logo")
+  pageYOffset >= 40
+    ? lang.classList.add   ("lang-scroll")
+    : lang.classList.remove("lang-scroll")
+  pageYOffset >= 40
+    ? nav.classList.add   ("scroll")
+    : nav.classList.remove("scroll")
 });
 
 let lang = 'es';

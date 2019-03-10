@@ -1,10 +1,10 @@
 // main:../style.scss
-header {
+.header-nav {
 
   left    : 0;
   bottom  : 0;
   @include size(100%, 50pt);
-  z-index : 999;
+  z-index : 99;
   color   : $white;
   position: fixed;
   text-transform  : uppercase;
@@ -13,7 +13,7 @@ header {
   font: bold .75rem/normal 'neutraText', sans-serif;
 
   @include min800 {
-    top       : 0;
+    top       : 30px;
     color     : $green ;
     font-size : 1rem   ;
     background: $white ;
@@ -21,6 +21,66 @@ header {
     height    : $logoDia / 2;
     [class*="entypo-"] {display: none}
     box-shadow: 0 1px 10px -5px $black;
+    @include transition(transform);
+  }
+}
+.scroll {
+  @include min800 {
+    transform: translateY(-30px);
+  }
+}
+
+.lang {
+  position: fixed;
+  background-color: $green40;
+  color: $black;
+  font-weight: bold;
+  bottom: 50pt;
+  right: 20px;
+  @include size(60pt, 30pt)
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-transform: none;
+  font-size: 1rem;
+  z-index: 10;
+  @include transition(transform, background-color, color);
+  &-scroll {
+    transform: translateY(50pt);
+    background-color: transparent;
+    color: transparent;
+  }
+  @include min800 {
+    top: 0;
+    bottom: auto;
+    right: 0;
+    border-radius: 0;
+    @include size(100%, 30px);
+    background-color: $grey40;
+    text-transform: inherit;
+    font-size: .8rem;
+    justify-content: flex-end;
+    padding-right: 20px;
+    &-scroll {
+      transform: translateY(-30px);
+    }
+  }
+
+  div {
+    cursor: pointer;
+    @include size(100%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include min800{
+      @include size(auto, 100%)
+    }
+  }
+  .hide {
+    display: none;
   }
 }
 
@@ -56,7 +116,7 @@ header {
 
 .logo {
   display: none;
-  z-index: 999;
+  z-index: 99;
   @include size ($logoDia, $logoDia);
   flex-shrink  : 0;
   border-radius: 50%;
