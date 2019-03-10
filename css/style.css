@@ -156,12 +156,12 @@ header {
   object-fit: cover;
 }
 
-.description {
+.about {
   margin: 30px auto 60px auto;
   max-width: 980px;
 }
 
-.description img {
+.about img {
   max-height: 150px;
 }
 
@@ -306,7 +306,7 @@ header {
   margin: auto;
 }
 
-.description {
+.details {
   display: none;
 }
 

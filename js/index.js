@@ -15,7 +15,7 @@ function products(type) {
     `<div class="product-item" id="${type[0]}${item.id}" onclick="showProductInfo('${type[0]}${item.id}')">
       <img src="../img/${type}/${item.image[0]}" alt=""/>
       <h3>${item.name[lang]}</h3>
-      <div class="description">
+      <div class="details">
         <div class="taste">
           <h4>Taste</h4>
           <p>${item.discription.taste[lang]}</p>
