@@ -5,7 +5,7 @@ const catalog = {
                   es: 'Acedera'},
       id: '0001',
       image: ['acedera.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor suave con un toque ácido.'},
@@ -17,7 +17,7 @@ const catalog = {
                   es: 'Acelga Arco Iris'},
       id: '0002',
       image: ['acelga_arco_iris.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor Suave'},
@@ -29,7 +29,7 @@ const catalog = {
                   es: 'Albahaca Limón'},
       id: '0003',
       image: ['albahaca_limon.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor fuerte, dulce y armoa cítrico.'},
@@ -41,7 +41,7 @@ const catalog = {
                   es: 'Albahaca Morada'},
       id: '0004',
       image: ['albahaca_morada.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor dulce intenso aromática.'},
@@ -53,7 +53,7 @@ const catalog = {
                   es: 'Amaranto Rojo'},
       id: '0005',
       image: ['amaranto.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor dulce y almendrado.'},
@@ -65,7 +65,7 @@ const catalog = {
                   es: 'Anís'},
       id: '0006',
       image: ['anis.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor dulce con un fuerte aroma típico de anís.'},
@@ -77,7 +77,7 @@ const catalog = {
                   es: 'Apio'},
       id: '0007',
       image: ['apio.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor intenso amargo y fuerte aroma muy típico del apio conside rada como una planta armoática y medicinal.'},
@@ -89,7 +89,7 @@ const catalog = {
                   es: 'Bálsamo Limón'},
       id: '0008',
       image: ['balsamo_limon.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor dulce con un fuerte aroma.'},
@@ -101,7 +101,7 @@ const catalog = {
                   es: 'Brócoli'},
       id: '0009',
       image: ['brocoli.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor a acre y a nuez.'},
@@ -113,7 +113,7 @@ const catalog = {
                   es: 'Col'},
       id: '0010',
       image: ['col.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor sutil profundo y terroso.'},
@@ -125,7 +125,7 @@ const catalog = {
                   es: 'Col Morada'},
       id: '0011',
       image: ['col_morada.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor sutil profundo y terroso.'},
@@ -137,7 +137,7 @@ const catalog = {
                   es: 'Crisantemo'},
       id: '0012',
       image: ['crisantemo.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor fresco picante y aromático.'},
@@ -149,7 +149,7 @@ const catalog = {
                   es: 'Culantro'},
       id: '0013',
       image: ['culantro.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor cítrico fuerte y pungente.'},
@@ -161,7 +161,7 @@ const catalog = {
                   es: 'Kale (Acelga Rusa)'},
       id: '0014',
       image: ['kale.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor suave y un poco amargo.'},
@@ -173,7 +173,7 @@ const catalog = {
                   es: 'Magenta'},
       id: '0015',
       image: ['magenta.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor suave delicado.'},
@@ -185,7 +185,7 @@ const catalog = {
                   es: 'Mostaza Espinaca (Tatsoi)'},
       id: '0016',
       image: ['mostaza_espinaca.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor a mostaza tierna un poco picante.'},
@@ -197,7 +197,7 @@ const catalog = {
                   es: 'Mostaza Gigante'},
       id: '0017',
       image: ['mostaza_gigante.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor picante y concentrado.'},
@@ -209,7 +209,7 @@ const catalog = {
                   es: 'Mostaza Japonesa'},
       id: '0018',
       image: ['mostaza_japonesa.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor picante leve.'},
@@ -221,7 +221,7 @@ const catalog = {
                   es: 'Mostaza Japonesa Morada'},
       id: '0019',
       image: ['mostaza_japonesa_morada.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor picante leve.'},
@@ -233,7 +233,7 @@ const catalog = {
                   es: 'Pac Choi'},
       id: '0020',
       image: ['pac_choi.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor amargo con un ligero toque dulce.'},
@@ -245,7 +245,7 @@ const catalog = {
                   es: 'Rábano'},
       id: '0021',
       image: ['rabano.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor intenso y concentrado.'},
@@ -257,7 +257,7 @@ const catalog = {
                   es: 'Remolacha/Remolacha Roja'},
       id: '0022',
       image: ['remolacha.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor dulce amargo y un toque picante.'},
@@ -269,7 +269,7 @@ const catalog = {
                   es: 'Rúcula'},
       id: '0023',
       image: ['rucula.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor fuerte, picante y amargo.'},
@@ -281,7 +281,7 @@ const catalog = {
                   es: 'Verdolaga'},
       id: '0024',
       image: ['verdolaga.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor suave.'},
@@ -293,7 +293,7 @@ const catalog = {
                   es: 'Wasabi'},
       id: '0025',
       image: ['wasabi.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor intenso picante.'},
@@ -305,7 +305,7 @@ const catalog = {
                   es: 'Zanahoria'},
       id: '0026',
       image: ['zanahoria.jpg'],
-      keywords: [],
+      keywords: ['microgreens'],
       discription: {
         taste: {  en: 'english text here',
                   es: 'Sabor típico de zanahoria.'},
@@ -314,6 +314,249 @@ const catalog = {
       }
     },
   ],
-  flowers: [],
+  flowers: [
+    {
+      name: {     en: 'English name (Anís)',
+                  es: 'Anís'},
+      id: '0001',
+      size: 'small',
+      image: [    'anis.jpg'    ],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Textura suave delicado aroma y sabor a anís.'},
+        look: {   en: 'english text here',
+                  es: 'Flores pequeñas de color morado, formando ramilletes.'},
+      }
+    },{
+      name: {     en: 'English name (Azulina)',
+                  es: 'Azulina'},
+      id: '0002',
+      size: 'medium',
+      image: [    'azulina.jpg'  ],
+      keywords: [ 'flowers'      ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Textura suave delicado aroma y sabor dulce.'},
+        look: {   en: 'english text here',
+                  es: 'Flores medianas de color azul con pétalos pequeños y numerosos en cada flor.'},
+      }
+    },{
+      name: {     en: 'English name (Begonia)',
+                  es: 'Begonia'},
+      id: '0003',
+      size: 'small',
+      image: [    'begonia1.jpg',
+                  'begonia2.jpg'  ],
+      keywords: [ 'flowers'       ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Textura carinosa sabor ácido.'},
+        look: {   en: 'english text here',
+                  es: 'Color rojo carmesí y cuando están cerradas el sabor es más fuerte y abiertas tienen un centro amarillo vistoso.'},
+      }
+    },{
+      name: {     en: 'English name (Borraja)',
+                  es: 'Borraja'},
+      id: '0004',
+      size: 'small',
+      image: [    'borraja.jpg' ],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Textura media sabor suave aroma a pepinillo.'},
+        look: {   en: 'english text here',
+                  es: 'Hermoso color celeste - violeta.'},
+      }
+    },{
+      name: {     en: 'English name (Capuchina)',
+                  es: 'Capuchina'},
+      id: '0005',
+      size: 'large',
+      image: [    'capuchina1.jpg',
+                  'capuchina2.jpg',
+                  'capuchina3.jpg'  ],
+      keywords: [ 'flowers'         ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Textura media sabor suave fuerte.'},
+        look: {   en: 'english text here',
+                  es: 'Perfecta para adornar con sus pétalos de color que van desde amarillo a tomate.'},
+      }
+    },{
+      name: {     en: 'English name (Chavelina)',
+                  es: 'Chavelina'},
+      id: '0006',
+      size: 'small',
+      image: [    'chavelina.jpg' ],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Textura media sabor suave suave.'},
+        look: {   en: 'english text here',
+                  es: 'De diversos colores blanco rosando rojo y matizados ubicados en inflorescencias.'},
+      }
+    },{
+      name: {     en: 'English name (Durazno)',
+                  es: 'Durazno'},
+      id: '0007',
+      size: 'small',
+      image: [    'durazno.jpg' ],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Textura suave fuerte aroma y sabor cítrico.'},
+        look: {   en: 'english text here',
+                  es: 'Color rojo intenso con apariencia aterciopelada.'},
+      }
+    },{
+      name: {     en: 'English name (Hojas de Mastuerzo)',
+                  es: 'Hojas de Mastuerzo'},
+      id: '0008',
+      size: ['small', 'medium'],
+      image: [    'mastuerzo.jpg' ],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Sabor ácido con un toque picante.'},
+        look: {   en: 'english text here',
+                  es: 'Color verde claro redondas similar a un paraguas.'},
+      }
+    },{
+      name: {     en: 'English name (Lavanda)',
+                  es: 'Lavanda'},
+      id: '0009',
+      size: 'small',
+      image: [    'lavanda.jpg' ],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Textura media sabor suave.'},
+        look: {   en: 'english text here',
+                  es: 'De color morado tamaño pequeño ubicadas en forma de una espiga muy aromáticas.'},
+      }
+    },{
+      name: {     en: 'English name (Limón)',
+                  es: 'Limón'},
+      id: '0010',
+      size: 'small',
+      image: [    'limon.jpg' ],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Textura suave fuerte aroma y sabor cítrico a limón.'},
+        look: {   en: 'english text here',
+                  es: 'Tiene un agradable color amarillo intenso con un centro de color rojo.'},
+      }
+    },{
+      name: {     en: 'English name (Mandarina)',
+                  es: 'Mandarina'},
+      id: '0011',
+      size: 'small',
+      image: [    'mandarina.jpg' ],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Texura suave fuerte aroma y sabor cítrico a mandarina.'},
+        look: {   en: 'english text here',
+                  es: 'Tiene un agradable color tomate suave.'},
+      }
+    },{
+      name: {     en: 'English name (Mini Pensamientos)',
+                  es: 'Mini Pensamientos'},
+      id: '0012',
+      size: 'small',
+      image: [    'mini_pensamientos1.jpg',
+                  'mini_pensamientos2.jpg','mini_pensamientos3.jpg','mini_pensamientos4.jpg',],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Texura suave sabor dulce.'},
+        look: {   en: 'english text here',
+                  es: 'Flores pequeñas de colores morado con amarillo y blanco combinados en una misma flor.'},
+      }
+    },{
+      name: {     en: 'English name (Mostaza)',
+                  es: 'Mostaza'},
+      id: '0013',
+      size: 'small',
+      image: [    'mostaza.jpg',],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Texura suave sabor picante suave.'},
+        look: {   en: 'english text here',
+                  es: 'Flores pequeñas delicadas de color amarillo en tallo verde claro.'},
+      }
+    },{
+      name: {     en: 'English name (Pensamientos)',
+                  es: 'Pensamientos'},
+      id: '0014',
+      size: 'large',
+      image: [    'pensamientos1.jpg',
+                  'pensamientos2.jpg',
+                  'pensamientos3.jpg',
+                  'pensamientos4.jpg',],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Texura suave sabor dulce.'},
+        look: {   en: 'english text here',
+                  es: 'Flores medianas de colores variados y combinados en una misma flor amarillo, violeta, rojo, blanco, azul, celeste.'},
+      }
+    },{
+      name: {     en: 'English name (Ramo de Novia)',
+                  es: 'Ramo de Novia'},
+      id: '0015',
+      size: 'small',
+      image: [    'ramo_de_novia.jpg'],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Texura suave fuerte aroma a miel de abeja con un agradable sabor dulce.'},
+        look: {   en: 'english text here',
+                  es: 'Flores pequeñas de color blanco que forman una inflorescencia similar a un ramo.'},
+      }
+    },{
+      name: {     en: 'English name (Salvia)',
+                  es: 'Salvia'},
+      id: '0016',
+      size: 'small',
+      image: [    'salvia.jpg'],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Texura suave sabor dulce.'},
+        look: {   en: 'english text here',
+                  es: 'Flores pequeñas de colores blanco y rojo intenso se disponen de forma opuesta en racimos alargados.'},
+      }
+    },{
+      name: {     en: 'English name (Marisol (Claudia - Mango))',
+                  es: 'Marisol (Claudia - Mango)'},
+      id: '0017',
+      size: 'large',
+      image: [    'claudia_mango.jpg'],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Texura suave sabor a mango y claudia.'},
+        look: {   en: 'english text here',
+                  es: 'Flores grandes de color anaranjado con pétalos alargados y rizados cada uno.'},
+      }
+    },{
+      name: {     en: 'English name (Volcán)',
+                  es: 'Volcán'},
+      id: '0018',
+      size: 'small',
+      image: [    'volcan.jpg'],
+      keywords: [ 'flowers'     ],
+      discription: {
+        taste: {  en: 'english text here',
+                  es: 'Texura media suave aroma sabor explosivo fuerte efervescente.'},
+        look: {   en: 'english text here',
+                  es: 'Flores medianas de color amarillo y tallo verde.'},
+      }
+    },
+  ],
   vegetables: []
 }

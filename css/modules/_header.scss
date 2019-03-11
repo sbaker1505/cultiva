@@ -46,11 +46,9 @@
   text-transform: none;
   font-size: 1rem;
   z-index: 10;
-  @include transition(transform, background-color, color);
+  @include transition(transform);
   &-scroll {
     transform: translateY(50pt);
-    background-color: transparent;
-    color: transparent;
   }
   @include min800 {
     top: 0;

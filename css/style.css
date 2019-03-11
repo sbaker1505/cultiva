@@ -90,16 +90,14 @@ p {
   text-transform: none;
   font-size: 1rem;
   z-index: 10;
-  transition-property: transform, background-color, color;
+  transition-property: transform;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  will-change: transform, background-color, color;
+  will-change: transform;
 }
 
 .lang-scroll {
   transform: translateY(50pt);
-  background-color: transparent;
-  color: transparent;
 }
 
 @media only screen and (min-width: 800px) {
