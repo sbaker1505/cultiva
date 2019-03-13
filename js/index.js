@@ -38,9 +38,7 @@ function Language(){
 
 function HeaderNav(){
   const { home, products, images, contact } = header.nav;
-  $('.nav').html('');
-  console.log(home)
-  $('.nav').append(`
+  $('.nav').html(`
     <a href="${
       page.hasClass('products-pages')
       ? '../' + home.path
