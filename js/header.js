@@ -42,12 +42,36 @@ const header = {
 const footer = {
   social: {
     twitter: {
-      ecuador: '',  // 🇪🇨
-      kenya: ''     // 🇰🇪
+      ecuador:  {
+        handle: '@cultivaecuador',
+        url: 'https://twitter.com/cultivaecuador'
+      },   // 🇪🇨
+      kenya:    {
+        handle: '@cultivakenya',
+        url: 'https://twitter.com/cultivakenya'
+      }    // 🇰🇪
     },
     facebook: {
-      ecuador: '',  // 🇪🇨
-      kenya: ''     // 🇰🇪
+      ecuador: {
+        handle: '@CultivaEcuador',
+        url: 'https://www.facebook.com/CultivaEcuador/'
+      },  // 🇪🇨
+      kenya: {
+        handle: '',
+        url: 'https://www.facebook.com/Cultiva-Kenya-2240433476201667/'
+      }     // 🇰🇪
     },
+  },
+  cotact: {
+    ecuador: {
+      email: 'ecuador@cultiva.com',
+      phone: '+593 5555 5555',
+      address: '',
+    },
+    kenya: {
+      email: 'kenya@cultiva.com',
+      phone: '+254 555 555555',
+      address: '',
+    }
   }
 }
