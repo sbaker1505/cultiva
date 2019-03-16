@@ -38,3 +38,16 @@ const header = {
     }
   },
 }
+
+const footer = {
+  social: {
+    twitter: {
+      ecuador: '',  // 🇪🇨
+      kenya: ''     // 🇰🇪
+    },
+    facebook: {
+      ecuador: '',  // 🇪🇨
+      kenya: ''     // 🇰🇪
+    },
+  }
+}

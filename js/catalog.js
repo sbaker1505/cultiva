@@ -6,8 +6,8 @@ const catalog = {
     },
     microgreens: [
       {
-        name: {     en: 'English name (Acedera)',
-        es: 'Acedera'},
+        name: {     en: 'Red Veined Sorrel',
+                    es: 'Acedera'},
         id:             '0001',
         image: [        'acedera.jpg'],
         keywords: [     'microgreens'],
@@ -18,7 +18,7 @@ const catalog = {
           es: 'Brillantes hojas verdes con nervaduras rojas y tallos rojos.'},
         }
       },{
-        name: {     en: 'English name (Acelga Arco Iris)',
+        name: {     en: 'Rainbow Chard',
         es: 'Acelga Arco Iris'},
         id:             '0002',
         image: [        'acelga_arco_iris.jpg'],
@@ -30,7 +30,7 @@ const catalog = {
           es: 'Hojas de color verde amarillento, con tallos de deferentes colores, rojo, rosado, amarillo, fucsia y anaranjado.'},
         }
       },{
-        name: {     en: 'English name (Albahaca Limón)',
+        name: {     en: 'Lemon Basil',
         es: 'Albahaca Limón'},
         id:             '0003',
         image: [        'albahaca_limon.jpg'],
@@ -42,7 +42,7 @@ const catalog = {
           es: 'Hojas lanceoladas de color verde claro y tallos verde pálido.'},
         }
       },{
-        name: {     en: 'English name (Albahaca Morada)',
+        name: {     en: 'Red Rubin Basil',
         es: 'Albahaca Morada'},
         id:             '0004',
         image: [        'albahaca_morada.jpg'],
@@ -54,7 +54,7 @@ const catalog = {
           es: 'Hojas moradas veteadas y tallo rojo.'},
         }
       },{
-        name: {     en: 'English name (Amaranto Rojo)',
+        name: {     en: 'Amaranth',
         es: 'Amaranto Rojo'},
         id:             '0005',
         image: [        'amaranto.jpg'],
@@ -66,7 +66,7 @@ const catalog = {
           es: 'Hojas en láminas muy finas ovales de colores rosa, rojizo morado y tallo rojo.'},
         }
       },{
-        name: {     en: 'English name (Anís)',
+        name: {     en: 'Anise',
         es: 'Anís'},
         id:             '0006',
         image: [        'anis.jpg'],
@@ -78,7 +78,7 @@ const catalog = {
           es: 'Hojas redondas de color café verdoso.'},
         }
       },{
-        name: {     en: 'English name (Apio)',
+        name: {     en: 'Celery',
         es: 'Apio'},
         id:             '0007',
         image: [        'apio.jpg'],
@@ -90,7 +90,7 @@ const catalog = {
           es: 'Hojas y tallos de color verde.'},
         }
       },{
-        name: {     en: 'English name (Bálsamo Limón)',
+        name: {     en: 'Lemon Balm',
         es: 'Bálsamo Limón'},
         id:             '0008',
         image: [        'balsamo_limon.jpg'],
@@ -102,7 +102,7 @@ const catalog = {
           es: 'Hojas redondas rugosas verde obscuro.'},
         }
       },{
-        name: {     en: 'English name (Brócoli)',
+        name: {     en: 'Broccoli',
         es: 'Brócoli'},
         id:             '0009',
         image: [        'brocoli.jpg'],
@@ -114,7 +114,7 @@ const catalog = {
           es: 'Hojas y tallos verde claro.'},
         }
       },{
-        name: {     en: 'English name (Col)',
+        name: {     en: 'Cabbage',
         es: 'Col'},
         id:             '0010',
         image: [        'col.jpg'],
@@ -126,7 +126,7 @@ const catalog = {
           es: 'Hojas medianas verdes con tallos verde.'},
         }
       },{
-        name: {     en: 'English name (Col Morada)',
+        name: {     en: 'Red Cabbage',
         es: 'Col Morada'},
         id:             '0011',
         image: [        'col_morada.jpg'],
@@ -138,7 +138,7 @@ const catalog = {
           es: 'Hojas medianas verde claras y verde oscuras con tallos morados.'},
         }
       },{
-        name: {     en: 'English name (Crisantemo)',
+        name: {     en: 'Shungiku',
         es: 'Crisantemo'},
         id:             '0012',
         image: [        'crisantemo.jpg'],
@@ -150,7 +150,7 @@ const catalog = {
           es: 'Hojas dentadas muy ornamen tales de color verde y tallos verde claro.'},
         }
       },{
-        name: {     en: 'English name (Culantro)',
+        name: {     en: 'Cilantro',
         es: 'Culantro'},
         id:             '0013',
         image: [        'culantro.jpg'],
@@ -162,7 +162,7 @@ const catalog = {
           es: 'Hojas verdes ornamentales, dentadas y tallo verde amarillo.'},
         }
       },{
-        name: {     en: 'English name (Kale (Acelga Rusa))',
+        name: {     en: 'Kale',
         es: 'Kale (Acelga Rusa)'},
         id:             '0014',
         image: [        'kale.jpg'],
@@ -174,7 +174,7 @@ const catalog = {
           es: 'Hojas delineadas de color azul verdoso y tallos de color lila.'},
         }
       },{
-        name: {     en: 'English name (Magenta)',
+        name: {     en: 'Magenta Spreen',
         es: 'Magenta'},
         id:             '0015',
         image: [        'magenta.jpg'],
@@ -186,7 +186,7 @@ const catalog = {
           es: 'Hojas de color verdoso con un centro de color magenta y tallos de color verde rojiso.'},
         }
       },{
-        name: {     en: 'English name (Mostaza Espinaca (Tatsoi))',
+        name: {     en: 'Tatsoi',
         es: 'Mostaza Espinaca (Tatsoi)'},
         id:             '0016',
         image: [        'mostaza_espinaca.jpg'],
@@ -198,7 +198,7 @@ const catalog = {
           es: 'Hojas pequeñas de color verde muy jugosas.'},
         }
       },{
-        name: {     en: 'English name (Mostaza Gigante)',
+        name: {     en: 'Garnet Gaint Mustard',
         es: 'Mostaza Gigante'},
         id:             '0017',
         image: [        'mostaza_gigante.jpg'],
@@ -210,7 +210,7 @@ const catalog = {
           es: 'Hojas verdes difuminadas de vino tinto, tiernas y picantes y tallos pálidos.'},
         }
       },{
-        name: {     en: 'English name (Mostaza Japonesa)',
+        name: {     en: 'Mizuna',
         es: 'Mostaza Japonesa'},
         id:             '0018',
         image: [        'mostaza_japonesa.jpg'],
@@ -222,7 +222,7 @@ const catalog = {
           es: 'Hojas dentadas y lanceoladas tiernas de color verde y tallo lila.'},
         }
       },{
-        name: {     en: 'English name (Mostaza Japonesa Morada)',
+        name: {     en: 'Miz America Mizuna',
         es: 'Mostaza Japonesa Morada'},
         id:             '0019',
         image: [        'mostaza_japonesa_morada.jpg'],
@@ -234,7 +234,7 @@ const catalog = {
           es: 'Hojas y tallos morados.'},
         }
       },{
-        name: {     en: 'English name (Pac Choi)',
+        name: {     en: 'Red Pac Choi',
         es: 'Pac Choi'},
         id:             '0020',
         image: [        'pac_choi.jpg'],
@@ -246,7 +246,7 @@ const catalog = {
           es: 'Hojas verde oscurdo, nervaduras moradas y tallos de color verde claro.'},
         }
       },{
-        name: {     en: 'English name (Rábano)',
+        name: {     en: 'Radish',
         es: 'Rábano'},
         id:             '0021',
         image: [        'rabano.jpg'],
@@ -258,7 +258,7 @@ const catalog = {
           es: 'Hojas y tallos de color verde jugosas.'},
         }
       },{
-        name: {     en: 'English name (Remolacha/Remolacha Roja)',
+        name: {     en: 'Beet/Bull\'s Blood Beet',
         es: 'Remolacha/Remolacha Roja'},
         id:             '0022',
         image: [        'remolacha.jpg'],
@@ -270,7 +270,7 @@ const catalog = {
           es: 'Hojas verdes con nervaduras rojas y tallos fucsia. Hojas tallos rojo oscuro.'},
         }
       },{
-        name: {     en: 'English name (Rúcula)',
+        name: {     en: 'Arugula',
         es: 'Rúcula'},
         id:             '0023',
         image: [        'rucula.jpg'],
@@ -282,7 +282,7 @@ const catalog = {
           es: 'Hojas verdes redondeadas y tallo verde claro.'},
         }
       },{
-        name: {     en: 'English name (Verdolaga)',
+        name: {     en: 'Red Gruner Purslane',
         es: 'Verdolaga'},
         id:             '0024',
         image: [        'verdolaga.jpg'],
@@ -294,7 +294,7 @@ const catalog = {
           es: 'Hojas de color claro, carnosas y jugosas.'},
         }
       },{
-        name: {     en: 'English name (Wasabi)',
+        name: {     en: 'Wasabi Arugula',
         es: 'Wasabi'},
         id:             '0025',
         image: [        'wasabi.jpg'],
@@ -306,7 +306,7 @@ const catalog = {
           es: 'Hojas de color verde oscuro, al igual que los tallos.'},
         }
       },{
-        name: {     en: 'English name (Zanahoria)',
+        name: {     en: 'Carrot',
         es: 'Zanahoria'},
         id:             '0026',
         image: [        'zanahoria.jpg'],
@@ -327,7 +327,7 @@ const catalog = {
     },
     flowers: [
       {
-        name: {     en: 'English name (Anís)',
+        name: {     en: 'Anise Hyssop',
         es: 'Anís'},
         id:             '0001',
         size:           'small',
@@ -340,7 +340,7 @@ const catalog = {
           es: 'Flores pequeñas de color morado, formando ramilletes.'},
         }
       },{
-        name: {     en: 'English name (Azulina)',
+        name: {     en: 'Centaurea',
         es: 'Azulina'},
         id:             '0002',
         size:           'medium',
@@ -353,7 +353,7 @@ const catalog = {
           es: 'Flores medianas de color azul con pétalos pequeños y numerosos en cada flor.'},
         }
       },{
-        name: {     en: 'English name (Begonia)',
+        name: {     en: 'Apple Blossom',
         es: 'Begonia'},
         id:             '0003',
         size:           'small',
@@ -367,7 +367,7 @@ const catalog = {
           es: 'Color rojo carmesí y cuando están cerradas el sabor es más fuerte y abiertas tienen un centro amarillo vistoso.'},
         }
       },{
-        name: {     en: 'English name (Borraja)',
+        name: {     en: 'Borage',
         es: 'Borraja'},
         id:             '0004',
         size:           'small',
@@ -380,7 +380,7 @@ const catalog = {
           es: 'Hermoso color celeste - violeta.'},
         }
       },{
-        name: {     en: 'English name (Capuchina)',
+        name: {     en: 'Trailing Nasturtium',
         es: 'Capuchina'},
         id:             '0005',
         size:           'large',
@@ -395,7 +395,7 @@ const catalog = {
           es: 'Perfecta para adornar con sus pétalos de color que van desde amarillo a tomate.'},
         }
       },{
-        name: {     en: 'English name (Chavelina)',
+        name: {     en: 'Dianthus',
         es: 'Chavelina'},
         id:             '0006',
         size:           'small',
@@ -408,7 +408,7 @@ const catalog = {
           es: 'De diversos colores blanco rosando rojo y matizados ubicados en inflorescencias.'},
         }
       },{
-        name: {     en: 'English name (Durazno)',
+        name: {     en: 'Red Gem',
         es: 'Durazno'},
         id:             '0007',
         size:           'small',
@@ -421,7 +421,7 @@ const catalog = {
           es: 'Color rojo intenso con apariencia aterciopelada.'},
         }
       },{
-        name: {     en: 'English name (Hojas de Mastuerzo)',
+        name: {     en: 'Nasturtium',
         es: 'Hojas de Mastuerzo'},
         id:             '0008',
         size: [         'small',
@@ -435,7 +435,7 @@ const catalog = {
           es: 'Color verde claro redondas similar a un paraguas.'},
         }
       },{
-        name: {     en: 'English name (Lavanda)',
+        name: {     en: 'Lavander',
         es: 'Lavanda'},
         id:             '0009',
         size:           'small',
@@ -448,7 +448,7 @@ const catalog = {
           es: 'De color morado tamaño pequeño ubicadas en forma de una espiga muy aromáticas.'},
         }
       },{
-        name: {     en: 'English name (Limón)',
+        name: {     en: 'Lemon Star',
         es: 'Limón'},
         id:             '0010',
         size:           'small',
@@ -461,7 +461,7 @@ const catalog = {
           es: 'Tiene un agradable color amarillo intenso con un centro de color rojo.'},
         }
       },{
-        name: {     en: 'English name (Mandarina)',
+        name: {     en: 'Tangerine Gem',
         es: 'Mandarina'},
         id:             '0011',
         size:           'small',
@@ -474,7 +474,7 @@ const catalog = {
           es: 'Tiene un agradable color tomate suave.'},
         }
       },{
-        name: {     en: 'English name (Mini Pensamientos)',
+        name: {     en: 'Helen Mount',
         es: 'Mini Pensamientos'},
         id:             '0012',
         size:           'small',
@@ -490,7 +490,7 @@ const catalog = {
           es: 'Flores pequeñas de colores morado con amarillo y blanco combinados en una misma flor.'},
         }
       },{
-        name: {     en: 'English name (Mostaza)',
+        name: {     en: 'Mustard',
         es: 'Mostaza'},
         id:             '0013',
         size:           'small',
@@ -503,7 +503,7 @@ const catalog = {
           es: 'Flores pequeñas delicadas de color amarillo en tallo verde claro.'},
         }
       },{
-        name: {     en: 'English name (Pensamientos)',
+        name: {     en: 'Penny Mix (Viola)',
         es: 'Pensamientos'},
         id:             '0014',
         size:           'large',
@@ -519,7 +519,7 @@ const catalog = {
           es: 'Flores medianas de colores variados y combinados en una misma flor amarillo, violeta, rojo, blanco, azul, celeste.'},
         }
       },{
-        name: {     en: 'English name (Ramo de Novia)',
+        name: {     en: 'Bridal Bouquet',
         es: 'Ramo de Novia'},
         id:             '0015',
         size:           'small',
@@ -532,7 +532,7 @@ const catalog = {
           es: 'Flores pequeñas de color blanco que forman una inflorescencia similar a un ramo.'},
         }
       },{
-        name: {     en: 'English name (Salvia)',
+        name: {     en: 'Sage',
         es: 'Salvia'},
         id:             '0016',
         size:           'small',
@@ -545,7 +545,7 @@ const catalog = {
           es: 'Flores pequeñas de colores blanco y rojo intenso se disponen de forma opuesta en racimos alargados.'},
         }
       },{
-        name: {     en: 'English name (Marisol (Claudia - Mango))',
+        name: {     en: 'Giant Orange',
         es: 'Marisol (Claudia - Mango)'},
         id:             '0017',
         size:           'large',
@@ -558,7 +558,7 @@ const catalog = {
           es: 'Flores grandes de color anaranjado con pétalos alargados y rizados cada uno.'},
         }
       },{
-        name: {     en: 'English name (Volcán)',
+        name: {     en: 'Sechuan Buttons',
         es: 'Volcán'},
         id:             '0018',
         size:           'small',
