@@ -39,39 +39,43 @@ function Language(){
 function HeaderNav(){
   const { home, products, images, contact } = header.nav;
   $('.nav').html(`
-    <a href="${
-      page.hasClass('products-pages')
-      ? '../' + home.path
-      : home.path
-      }" class="nav-link">
-    <div class="${home.icon}"></div>
-    <span>${home.title[lang]}</span>
-    </a>
-    <a href="${
-      page.hasClass('products-pages')
-      ? products.path
-      : 'products/' + products.path
-      }" class="nav-link">
-    <div class="${products.icon}"></div>
-    <span>${products.title[lang]}</span>
-    </a>
+    <div class="nav-link-container">
+      <a href="${
+        page.hasClass('products-pages')
+        ? '../' + home.path
+        : home.path
+        }" class="nav-link">
+      <div class="${home.icon}"></div>
+      <span>${home.title[lang]}</span>
+      </a>
+      <a href="${
+        page.hasClass('products-pages')
+        ? products.path
+        : 'products/' + products.path
+        }" class="nav-link">
+      <div class="${products.icon}"></div>
+      <span>${products.title[lang]}</span>
+      </a>
+    </div>
     <div class="logo"></div>
-    <a href="${
-      page.hasClass('products-pages')
-      ? '../' + images.path
-      : images.path
-      }" class="nav-link">
-    <div class="${images.icon}"></div>
-    <span>${images.title[lang]}</span>
-    </a>
-    <a href="${
-      page.hasClass('products-pages')
-      ? '../' + contact.path
-      : contact.path
-      }" class="nav-link">
-    <div class="${contact.icon}"></div>
-    <span>${contact.title[lang]}</span>
-    </a>
+    <div class="nav-link-container">
+      <a href="${
+        page.hasClass('products-pages')
+        ? '../' + images.path
+        : images.path
+        }" class="nav-link">
+      <div class="${images.icon}"></div>
+      <span>${images.title[lang]}</span>
+      </a>
+      <a href="${
+        page.hasClass('products-pages')
+        ? '../' + contact.path
+        : contact.path
+        }" class="nav-link">
+      <div class="${contact.icon}"></div>
+      <span>${contact.title[lang]}</span>
+      </a>
+    </div>
     `)
 
     if(page.hasClass('products-pages')){

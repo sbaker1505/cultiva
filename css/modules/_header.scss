@@ -109,6 +109,19 @@
     span {
       margin-top: 10px;
     }
+
+    &-container {
+      display: flex;
+      flex-direction: row;
+      min-width: 300px;
+
+      &:first-of-type {
+        justify-content: flex-end;
+      }
+      &:last-of-type {
+        justify-content: flex-start;
+      }
+    }
   }
 }
 
