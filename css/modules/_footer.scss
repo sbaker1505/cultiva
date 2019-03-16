@@ -2,25 +2,36 @@
 
 
 footer {
-  height  : $logoDia;
-  display : flex;
-  @include full-page;
+  display: none;
 
-  align-items     : center;
-  justify-content : center;
-  background-color: $grey ;
+  @include min800{
+    height  : $logoDia;
+    display : flex;
+    @include full-page;
 
-  .icons {
-    justify-content: flex-end;
-    ul {
-      display: flex;
-    }
-    li {
-      margin-left: 15px;
-      @include transition(color);
-      &:hover, &:active {
-        color: $green40;
-      }
-    }
+    align-items     : center;
+    justify-content : center;
+    background-color: $grey ;
+
+  }
+
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  & > * {
+    margin: 0 20px;
+  }
+}
+.social {
+  margin: 15px;
+  @include transition(color);
+  &:hover, &:active {
+    color: $green40;
   }
 }

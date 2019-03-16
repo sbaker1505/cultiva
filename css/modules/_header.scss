@@ -1,9 +1,8 @@
 // main:../style.scss
 .header-nav {
-
   left    : 0;
   bottom  : 0;
-  @include size(100%, 50pt);
+  @include size(100%, $navBar);
   z-index : 99;
   color   : $white;
   position: fixed;
@@ -35,7 +34,7 @@
   background-color: $green40;
   color: $black;
   font-weight: bold;
-  bottom: 50pt;
+  bottom: $navBar;
   right: 20px;
   @include size(60pt, 30pt)
   display: flex;
@@ -48,7 +47,7 @@
   z-index: 10;
   @include transition(transform);
   &-scroll {
-    transform: translateY(50pt);
+    transform: translateY(30pt);
   }
   @include min800 {
     top: 0;
@@ -88,7 +87,7 @@
   align-items    : center;
   justify-content: center;
 
-  div, a {
+  a {
     margin: 0 10px;
   }
 

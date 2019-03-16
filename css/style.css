@@ -34,11 +34,15 @@ p {
   width: 100%;
 }
 
+#main {
+  margin-bottom: 60pt;
+}
+
 .header-nav {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 50pt;
+  height: 60pt;
   z-index: 99;
   color: white;
   position: fixed;
@@ -78,7 +82,7 @@ p {
   background-color: #c6d9a8;
   color: #0f1308;
   font-weight: bold;
-  bottom: 50pt;
+  bottom: 60pt;
   right: 20px;
   width: 60pt;
   height: 30pt;
@@ -97,7 +101,7 @@ p {
 }
 
 .lang-scroll {
-  transform: translateY(50pt);
+  transform: translateY(30pt);
 }
 
 @media only screen and (min-width: 800px) {
@@ -147,7 +151,7 @@ p {
   justify-content: center;
 }
 
-.nav div, .nav a {
+.nav a {
   margin: 0 10px;
 }
 
@@ -252,7 +256,8 @@ p {
 }
 
 .about {
-  margin: 30px auto 60px auto;
+  margin: 30px auto 0 auto;
+  padding-bottom: 50px;
   max-width: 980px;
 }
 
@@ -412,31 +417,41 @@ p {
 }
 
 footer {
-  height: 150px;
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  footer {
+    height: 150px;
+    display: flex;
+    width: 100vw;
+    margin: 0 -10vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #6D6E71;
+  }
+}
+
+.contact {
   display: flex;
-  width: 100vw;
-  margin: 0 -10vw;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  background-color: #6D6E71;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
-footer .icons {
-  justify-content: flex-end;
+.contact > * {
+  margin: 0 20px;
 }
 
-footer .icons ul {
-  display: flex;
-}
-
-footer .icons li {
-  margin-left: 15px;
+.social {
+  margin: 15px;
   transition-property: color;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   will-change: color;
 }
 
-footer .icons li:hover, footer .icons li:active {
+.social:hover, .social:active {
   color: #c6d9a8;
 }

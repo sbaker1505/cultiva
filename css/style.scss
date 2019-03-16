@@ -36,6 +36,10 @@ p {
   width: 100%;
 }
 
+#main {
+  margin-bottom: $navBar;
+}
+
 //modules
 @import 'modules/header';
 @import 'modules/home';
