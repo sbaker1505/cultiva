@@ -1,8 +1,7 @@
 //Constants
 const page = $('html');
-let lang =
-  localStorage.getItem("lang") ?
-  localStorage.getItem("lang") :'es'
+let lang = localStorage.getItem("lang")
+            ? localStorage.getItem("lang") :'es'
 
 
 //Scroll Event for Logo and Lang
@@ -18,15 +17,31 @@ window.addEventListener('scroll', function() {
     : $('.header-nav').removeClass("scroll")
 });
 
+$(window).resize(function(){
+  console.log(window.innerWidth)
+  if(window.innerWidth <= 800 && $('html').hasClass('desktop')){
+    $('html').removeClass('desktop').addClass('mobile')
+    HeaderNav();
+  } else if(window.innerWidth >= 801 && $('html').hasClass('mobile')){
+    $('html').removeClass('mobile').addClass('desktop')
+    HeaderNav();
+  }
+})
+
 //loadPage ⏱
 function loadPage(){
   Language();
   HeaderNav();
+  FooterPage()
+  window.innerWidth <= 800
+    ? $('html').addClass('mobile')
+    : $('html').addClass('desktop');
   if(page.hasClass('microgreens')) {Products('microgreens')} //🥦
   if(page.hasClass('vegetables'))  {Products('vegetables' )} //🌽
   if(page.hasClass('flowers'))     {Products('flowers'    )} //💐
 }
 
+//language html populator
 function Language(){
   $('.lang').html('');
   if(lang === 'es'){
@@ -36,6 +51,7 @@ function Language(){
   }
 }
 
+//header html populator
 function HeaderNav(){
   const { home, products, images, contact } = header.nav;
   $('.nav').html(`
@@ -67,14 +83,19 @@ function HeaderNav(){
       <div class="${images.icon}"></div>
       <span>${images.title[lang]}</span>
       </a>
-      <a href="${
-        page.hasClass('products-pages')
-        ? '../' + contact.path
-        : contact.path
-        }" class="nav-link">
-      <div class="${contact.icon}"></div>
-      <span>${contact.title[lang]}</span>
-      </a>
+      ${window.innerWidth <= 800
+        ?   `<a href="#" class="nav-link" onclick="ContactSlider()">
+              <div class="${contact.icon}"></div>
+              <span>${contact.title[lang]}</span>
+            </a>`
+        :   `<a href="${
+              page.hasClass('products-pages')
+              ? '../' + contact.path
+              : contact.path
+              }" class="nav-link">
+              <span>${contact.title[lang]}</span>
+            </a>`
+      }
     </div>
     `)
 
@@ -85,8 +106,42 @@ function HeaderNav(){
     }
 }
 
+//home page html populator
 function HomePage() {
 
+}
+
+//footer page html populator
+function FooterPage() {
+  const FooterContent = $('footer');
+  FooterContent.html('')
+    .append(`<div class="contact"></div>`);
+  footer.map(item => $('.contact').append(`
+    <address class="${item.title.toLowerCase()}">
+      <h3>${item.title}</h3>
+      <a href="tel:${item.contact.phone}">${item.contact.phoneFormatted}</a>
+      <a href="mailto:${item.contact.email}">${item.contact.email}</a>
+      <div class="location">
+        <p>street address</p>
+        <p>city, provience, Ecuador</p>
+      </div>
+      <div class="icons">
+        <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
+        <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a>
+      </div>
+    </address>
+  `))
+
+}
+
+//contactPage html populator
+function ContactPage(){
+
+}
+
+//contactSlider html populator
+function ContactSlider(){
+  console.log("contact slider")
 }
 
 //create Product Pages
@@ -96,8 +151,8 @@ function Products(type) {
 
   //add Title
   const MainContent = $('#main');
-  MainContent.html('');
-  MainContent.append(`
+  MainContent.html('')
+    .append(`
     <section class="product-page">
       <h2 class="product-page-title">${title[lang]}</h2>
       <article class="product-list"></article>
@@ -122,7 +177,7 @@ function Products(type) {
     </div>
   `));
 
-  //add Click Event for Details
+  //Click Event for Details
   $('.product-item').click(function(){
       let position = $(this).index() // where in the array
       alert(
@@ -130,16 +185,6 @@ function Products(type) {
       list[position].description.look [lang])
     })
 }
-
-//odd Click Event for Details
-// function showProductInfo(id){
-//   const item = document.getElementById(id);
-//   const show = document.querySelector('div.show');
-//   const highlight = document.querySelector('div.highlight');
-//   item.classList.toggle('highlight');
-//   item.children[2].classList.toggle('show');
-//   console.log(highlight, show, num)
-// }
 
 //changeLanguage 🇺🇸🇪🇸
 $('.lang').click(function(){

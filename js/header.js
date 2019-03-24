@@ -39,39 +39,42 @@ const header = {
   },
 }
 
-const footer = {
-  social: {
-    twitter: {
-      ecuador:  {
+const footer = [
+  {
+    title: 'Ecuador',
+    social: {
+      twitter: {
         handle: '@cultivaecuador',
         url: 'https://twitter.com/cultivaecuador'
-      },   // 🇪🇨
-      kenya:    {
-        handle: '@cultivakenya',
-        url: 'https://twitter.com/cultivakenya'
-      }    // 🇰🇪
-    },
-    facebook: {
-      ecuador: {
+      },
+      facebook: {
         handle: '@CultivaEcuador',
         url: 'https://www.facebook.com/CultivaEcuador/'
-      },  // 🇪🇨
-      kenya: {
+      },
+    },
+    contact: {
+      email: 'ecuador@cultiva.com',
+      phoneFormatted: '+593 (5555) 5555',
+      phone: '+59355555555',
+      address: '',
+    }
+  },{
+    title: 'Kenya',
+    social: {
+      twitter: {
+        handle: '@cultivakenya',
+        url: 'https://twitter.com/cultivakenya'
+      },
+      facebook: {
         handle: '',
         url: 'https://www.facebook.com/Cultiva-Kenya-2240433476201667/'
-      }     // 🇰🇪
+      }
     },
-  },
-  cotact: {
-    ecuador: {
-      email: 'ecuador@cultiva.com',
-      phone: '+593 5555 5555',
-      address: '',
-    },
-    kenya: {
+    contact: {
       email: 'kenya@cultiva.com',
+      phoneFormatted: '+254 (555) 555 555',
       phone: '+254 555 555555',
       address: '',
     }
-  }
-}
+  },
+]
