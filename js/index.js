@@ -90,7 +90,7 @@ function HeaderNav(){
       <span>${images.title[lang]}</span>
       </a>
       ${window.innerWidth <= 800
-        ?   `<a href="#" class="nav-link" onclick="slide()">
+        ?   `<a href="#" class="nav-link" onclick="slide(); return false">
               <div class="${contact.icon}"></div>
               <span>${contact.title[lang]}</span>
             </a>`
@@ -169,10 +169,6 @@ function ContactSlider(){
   `))
 }
 
-function slide(){
-  $('.contact-slider').toggleClass('slide');
-}
-
 //create Product Pages
 function Products(type) {
   const list = catalog[type][type];
@@ -217,11 +213,17 @@ function Products(type) {
 
 //changeLanguage 🇺🇸🇪🇸
 $('.lang').click(function(){
-  if(lang == 'es')
-  { localStorage.setItem("lang","en"); lang = 'en'} else
-  { localStorage.setItem("lang","es"); lang = 'es'}
+  if (lang == 'es') {
+  localStorage.setItem("lang","en"); lang = 'en'
+  } else {
+    localStorage.setItem("lang","es"); lang = 'es'}
   loadPage()
 })
+
+//slider toggle
+function slide(){
+  $('.contact-slider').toggleClass('slide');
+}
 
 //renderView
 $(document).ready(loadPage)
