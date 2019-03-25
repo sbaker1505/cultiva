@@ -18,13 +18,16 @@ window.addEventListener('scroll', function() {
 });
 
 $(window).resize(function(){
-  console.log(window.innerWidth)
-  if(window.innerWidth <= 800 && $('html').hasClass('desktop')){
-    $('html').removeClass('desktop').addClass('mobile')
+  if(window.innerWidth <= 800 && page.hasClass('desktop')){
+    page.removeClass('desktop').addClass('mobile')
     HeaderNav();
-  } else if(window.innerWidth >= 801 && $('html').hasClass('mobile')){
-    $('html').removeClass('mobile').addClass('desktop')
+    ContactSlider();
+    $('footer').html('');
+  } else if(window.innerWidth >= 801 && page.hasClass('mobile')){
+    page.removeClass('mobile').addClass('desktop')
     HeaderNav();
+    FooterPage();
+    $('.contact-slider').remove();
   }
 })
 
@@ -32,10 +35,13 @@ $(window).resize(function(){
 function loadPage(){
   Language();
   HeaderNav();
-  FooterPage()
-  window.innerWidth <= 800
-    ? $('html').addClass('mobile')
-    : $('html').addClass('desktop');
+  if (window.innerWidth <= 800){
+    page.addClass('mobile')
+    ContactSlider();
+  } else {
+    page.addClass('desktop');
+    FooterPage();
+  }
   if(page.hasClass('microgreens')) {Products('microgreens')} //🥦
   if(page.hasClass('vegetables'))  {Products('vegetables' )} //🌽
   if(page.hasClass('flowers'))     {Products('flowers'    )} //💐
@@ -84,7 +90,7 @@ function HeaderNav(){
       <span>${images.title[lang]}</span>
       </a>
       ${window.innerWidth <= 800
-        ?   `<a href="#" class="nav-link" onclick="ContactSlider()">
+        ?   `<a href="#" class="nav-link" onclick="slide()">
               <div class="${contact.icon}"></div>
               <span>${contact.title[lang]}</span>
             </a>`
@@ -141,7 +147,30 @@ function ContactPage(){
 
 //contactSlider html populator
 function ContactSlider(){
-  console.log("contact slider")
+  $('header').append(`
+    <div class="contact-slider">
+      <div class="entypo-cancel" onclick="slide()"></div>
+    </div>
+  `)
+  footer.map(item => $('.contact-slider').append(`
+    <address class="${item.title.toLowerCase()}">
+      <h3>${item.title}</h3>
+      <a href="tel:${item.contact.phone}">${item.contact.phoneFormatted}</a>
+      <a href="mailto:${item.contact.email}">${item.contact.email}</a>
+      <div class="location">
+        <p>street address</p>
+        <p>city, provience, Ecuador</p>
+      </div>
+      <div class="icons">
+        <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
+        <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a>
+      </div>
+    </address>
+  `))
+}
+
+function slide(){
+  $('.contact-slider').toggleClass('slide');
 }
 
 //create Product Pages
