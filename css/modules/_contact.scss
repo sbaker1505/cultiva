@@ -1,1 +1,57 @@
 // main:../style.scss
+
+//slider styles
+.slider {
+  &-contact {
+    @include size(100%, 75vh);
+    background-color: $green;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    bottom: -75vh;
+    left: 0;
+    @include transition;
+    padding: 20px;
+    padding-top: 40px;
+    text-transform: none;
+    font-size: 1rem;
+  }
+
+  &-address {
+    font-style: normal;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    @include size(100%, 150px);
+
+    &-image {
+      @include size(150px, auto);
+      background-color: $grey40;
+      border-radius: 50%;
+    }
+
+    &-info {
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+.slide {
+  transform: translateY(-75vh);
+}
+
+
+.exit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  @include transition(color);
+
+  &:hover, &:active {
+    color: $black;
+  }
+}

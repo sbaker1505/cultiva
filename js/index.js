@@ -148,22 +148,25 @@ function ContactPage(){
 //contactSlider html populator
 function ContactSlider(){
   $('header').append(`
-    <div class="contact-slider">
-      <div class="entypo-cancel" onclick="slide()"></div>
+    <div class="slider-contact">
+      <div class="exit entypo-cancel" onclick="slide()"></div>
     </div>
   `)
-  footer.map(item => $('.contact-slider').append(`
-    <address class="${item.title.toLowerCase()}">
-      <h3>${item.title}</h3>
-      <a href="tel:${item.contact.phone}">${item.contact.phoneFormatted}</a>
-      <a href="mailto:${item.contact.email}">${item.contact.email}</a>
-      <div class="location">
-        <p>street address</p>
-        <p>city, provience, Ecuador</p>
-      </div>
-      <div class="icons">
-        <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
-        <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a>
+  footer.map(item => $('.slider-contact').append(`
+    <address class="slider-address ${item.title.toLowerCase()}">
+      <img class="slider-address-image" src="#" alt="">
+      <div class="slider-address-info">
+        <h3 class="slider-address-name">${item.title}</h3>
+        <a class="slider-address-phone" href="tel:${item.contact.phone}">${item.contact.phoneFormatted}</a>
+        <a class="slider-address-email" href="mailto:${item.contact.email}">${item.contact.email}</a>
+        <div class="slider-address-location">
+          <p>street address</p>
+          <p>city, provience, Ecuador</p>
+        </div>
+        <div class="slider-address-icons">
+          <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
+          <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a>
+        </div>
       </div>
     </address>
   `))
@@ -222,7 +225,7 @@ $('.lang').click(function(){
 
 //slider toggle
 function slide(){
-  $('.contact-slider').toggleClass('slide');
+  $('.slider-contact').toggleClass('slide');
 }
 
 //renderView

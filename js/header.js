@@ -53,10 +53,16 @@ const footer = [
       },
     },
     contact: {
-      email: 'ecuador@cultiva.com',
-      phoneFormatted: '+593 (5555) 5555',
-      phone: '+59355555555',
-      address: '',
+      email: 'grupocultivavida@gmail.com',
+      phoneFormatted: '+593 98-507-3598',
+      phone: '+593985073598',
+      address: {
+        city: 'Quito',
+        country: 'Ecuador',
+        street: 'Pifo, Entre Manuel Burbano y José Borja',
+        long: '-78.346268',
+        lat: '-0.208575',
+      }
     }
   },{
     title: 'Kenya',
@@ -72,9 +78,15 @@ const footer = [
     },
     contact: {
       email: 'kenya@cultiva.com',
-      phoneFormatted: '+254 (555) 555 555',
-      phone: '+254 555 555555',
-      address: '',
+      phoneFormatted: '+254 74-247-6696',
+      phone: '+254742476696',
+      address: {
+        city: 'Nairobi',
+        country: 'Kenya',
+        street: 'Pufo Road next door to Jkuat University',
+        long: '36.739483',
+        lat: '-1.356795',
+      }
     }
   },
 ]

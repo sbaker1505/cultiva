@@ -151,18 +151,3 @@
 .on-page {
   color: $black;
 }
-
-.contact-slider {
-  @include size(100%, 75vh);
-  background-color: $green;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  position: fixed;
-  bottom: -75vh;
-  left: 0;
-  @include transition;
-}
-
-.slide {
-  transform: translateY(-75vh);
-}
