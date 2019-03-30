@@ -20,7 +20,6 @@ body {
   line-height: 1.5rem;
   margin-bottom: 50pt;
   background-color: white;
-  overflow-y: hidden;
 }
 
 @media only screen and (min-width: 800px) {
@@ -390,6 +389,7 @@ p {
 
 .product-list {
   width: 100%;
+  padding-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
@@ -415,6 +415,70 @@ p {
 
 .show {
   display: inherit;
+}
+
+.images-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  color: #637d37;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 800px) {
+  .images-page {
+    margin-top: 200px;
+  }
+}
+
+.images-page p {
+  text-transform: none;
+}
+
+.images-page-title {
+  margin-bottom: 20px;
+}
+
+.images-list {
+  width: 100%;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.images-list div {
+  width: 100%;
+  height: 100%;
+}
+
+.images-list div.landscape {
+  grid-column-end: span 2;
+  max-height: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+  .images-list div.landscape {
+    grid-column-end: auto;
+  }
+}
+
+.images-list div.portrait {
+  grid-row-end: span 2;
+  height: 510px;
+}
+
+.images-list div.square {
+  height: 250px;
+}
+
+.images-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slider-contact {
@@ -447,7 +511,7 @@ p {
 
 .slider-address-image {
   width: 150px;
-  height: auto;
+  height: 150px;
   background-color: #d4d5d6;
   border-radius: 50%;
 }

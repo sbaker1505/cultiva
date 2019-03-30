@@ -25,7 +25,7 @@
     @include size(100%, 150px);
 
     &-image {
-      @include size(150px, auto);
+      @include size(150px, 150px);
       background-color: $grey40;
       border-radius: 50%;
     }

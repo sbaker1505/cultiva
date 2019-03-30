@@ -27,7 +27,7 @@ $(window).resize(function(){
     page.removeClass('mobile').addClass('desktop')
     HeaderNav();
     FooterPage();
-    $('.contact-slider').remove();
+    $('.slider-contact').remove();
   }
 })
 
@@ -42,6 +42,7 @@ function loadPage(){
     page.addClass('desktop');
     FooterPage();
   }
+  if(page.hasClass('images'))      {ImagePage()            } //🖼
   if(page.hasClass('microgreens')) {Products('microgreens')} //🥦
   if(page.hasClass('vegetables'))  {Products('vegetables' )} //🌽
   if(page.hasClass('flowers'))     {Products('flowers'    )} //💐
@@ -128,8 +129,8 @@ function FooterPage() {
       <a href="tel:${item.contact.phone}">${item.contact.phoneFormatted}</a>
       <a href="mailto:${item.contact.email}">${item.contact.email}</a>
       <div class="location">
-        <p>street address</p>
-        <p>city, provience, Ecuador</p>
+        <p>${item.contact.address.street}</p>
+        <p>${item.contact.address.city + ', ' + item.contact.address.country}</p>
       </div>
       <div class="icons">
         <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
@@ -154,14 +155,15 @@ function ContactSlider(){
   `)
   footer.map(item => $('.slider-contact').append(`
     <address class="slider-address ${item.title.toLowerCase()}">
-      <img class="slider-address-image" src="#" alt="">
+      <img class="slider-address-image" src="
+      https://maps.googleapis.com/maps/api/staticmap?center=${item.contact.address.lat + ',' + item.contact.address.long}&zoom=13&size=150x150&maptype=roadmap&markers=size:mid%7Ccolor:red%7C${item.contact.address.lat + ',' + item.contact.address.long}&key=${GAPI}" alt="Map of Cultiva ${item.title} location">
       <div class="slider-address-info">
         <h3 class="slider-address-name">${item.title}</h3>
         <a class="slider-address-phone" href="tel:${item.contact.phone}">${item.contact.phoneFormatted}</a>
         <a class="slider-address-email" href="mailto:${item.contact.email}">${item.contact.email}</a>
         <div class="slider-address-location">
-          <p>street address</p>
-          <p>city, provience, Ecuador</p>
+        <p>${item.contact.address.street}</p>
+        <p>${item.contact.address.city + ', ' + item.contact.address.country}</p>
         </div>
         <div class="slider-address-icons">
           <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
@@ -184,7 +186,7 @@ function Products(type) {
     <section class="product-page">
       <h2 class="product-page-title">${title[lang]}</h2>
       <article class="product-list"></article>
-    </section>`)
+    </section>`);
 
   //add Content
   const ProductList = $('.product-list');
@@ -212,6 +214,24 @@ function Products(type) {
       list[position].description.taste[lang] +"\n\n"+
       list[position].description.look [lang])
     })
+}
+
+//create Image Page
+function ImagePage(){
+  const MainContent = $('#main');
+  MainContent.html('')
+    .append(`
+    <section class="images-page">
+      <h2 class="images-page-title">${images.title[lang]}</h2>
+      <article class="images-list"></article>
+    </section>`);
+
+  const ImageList = $('.images-list');
+  images.images.map(item => ImageList.append(`
+    <div class="${item.view}" >
+      <img src="img/${item.url}" alt="${item.alt}" />
+    </div>
+    `))
 }
 
 //changeLanguage 🇺🇸🇪🇸

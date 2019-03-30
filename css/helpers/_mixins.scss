@@ -10,6 +10,11 @@
     @content;
   }
 }
+@mixin max600 {
+  @media only screen and (max-width: 600px){
+    @content;
+  }
+}
 
 // widths
 @mixin width($mw, $w, $xw) {

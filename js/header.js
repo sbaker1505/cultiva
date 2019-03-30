@@ -90,3 +90,6 @@ const footer = [
     }
   },
 ]
+
+
+const GAPI = 'AIzaSyAsW-zarRnJiJrswsH5XQ2vk4XmpOka1JQ'

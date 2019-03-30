@@ -1,1 +1,56 @@
 // main:../style.scss
+.images {
+  &-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    color: $green;
+    text-transform: uppercase;
+    @include min800 {
+      margin-top: $logoDia + 50px;
+    }
+    p {
+      text-transform: none;
+    }
+    &-title {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-list {
+    width: 100%;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+
+    div {
+      @include size(100%, 100%);
+
+      &.landscape {
+        grid-column-end: span 2;
+        max-height: 250px;
+        @include max600 {
+          grid-column-end: auto;
+        }
+      }
+
+      &.portrait {
+        grid-row-end: span 2;
+        height: 510px;
+      }
+
+      &.square {
+        height: 250px;
+      }
+    }
+
+    img {
+      @include size(100%, 100%);
+      object-fit: cover;
+    }
+  }
+}
