@@ -43,6 +43,7 @@ function loadPage(){
     FooterPage();
   }
   if(page.hasClass('images'))      {ImagePage()            } //🖼
+  if(page.hasClass('contact-page')){ContactPage()          } //📞
   if(page.hasClass('microgreens')) {Products('microgreens')} //🥦
   if(page.hasClass('vegetables'))  {Products('vegetables' )} //🌽
   if(page.hasClass('flowers'))     {Products('flowers'    )} //💐
@@ -143,7 +144,22 @@ function FooterPage() {
 
 //contactPage html populator
 function ContactPage(){
+  const MainContent = $('#main');
+  const BodyContent = $('body');
 
+  MainContent.html('')
+    .append(`
+      <div id="map"></div>
+      <form class="contact-form" action="https://formspree.io/sbaker1505@gmail.com" method="POST">
+        <input type="hidden" name="_language" value="${lang}" />
+        <input type="text" name="name">
+        <input type="text" name="_replyto">
+        <input type="submit" value="Send">
+      </form>
+    `);
+    BodyContent.append(`
+      <script src="https://maps.googleapis.com/maps/api/js?key=${GAPI}&callback=initMap" async defer></script>
+    `)
 }
 
 //contactSlider html populator

@@ -542,6 +542,19 @@ p {
   color: #0f1308;
 }
 
+.contact-form {
+  padding-top: 150px;
+}
+
+#map {
+  height: 500px;
+  overflow: hidden;
+  max-height: 75vw;
+  width: 100vw;
+  margin: 0 -10vw;
+  background-color: #d4d5d6;
+}
+
 footer {
   display: none;
 }

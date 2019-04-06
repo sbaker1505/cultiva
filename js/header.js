@@ -60,8 +60,8 @@ const footer = [
         city: 'Quito',
         country: 'Ecuador',
         street: 'Pifo, Entre Manuel Burbano y José Borja',
-        long: '-78.346268',
-        lat: '-0.208575',
+        long: -78.346268,
+        lat: -0.208575,
       }
     }
   },{
@@ -84,8 +84,8 @@ const footer = [
         city: 'Nairobi',
         country: 'Kenya',
         street: 'Pufo Road next door to Jkuat University',
-        long: '36.739483',
-        lat: '-1.356795',
+        long: 36.739483,
+        lat: -1.356795,
       }
     }
   },
