@@ -1,11 +1,19 @@
 let map;
 function initMap() {
+  const green = '#637d37';
+  const blue = '#CDE4F7';
+  const black = '#000000';
+  const grey = '#6D6E71';
+  const grey40 = '#d4d5d6';
+  const white = '#ffffff';
+  const yellow = '#dece25';
+
   map = new google.maps.Map(document.getElementById('map'), {
     disableDefaultUI: true,
     styles: [
           {
             elementType: 'geometry',
-            stylers: [{color: '#f5f5f5'}]
+            stylers: [{color: white}]
           },
           {
             elementType: 'labels.icon',
@@ -13,81 +21,31 @@ function initMap() {
           },
           {
             elementType: 'labels.text.fill',
-            stylers: [{color: '#616161'}]
+            stylers: [{color: green}]
           },
           {
             elementType: 'labels.text.stroke',
-            stylers: [{color: '#f5f5f5'}]
+            stylers: [{color: white}]
           },
           {
-            featureType: 'administrative.land_parcel',
-            elementType: 'labels.text.fill',
-            stylers: [{color: '#bdbdbd'}]
+            featureType: 'administrative.country',
+            elementType: 'geometry.stroke',
+            stylers: [{color: grey40}]
           },
           {
-            featureType: 'poi',
-            elementType: 'geometry',
-            stylers: [{color: '#eeeeee'}]
-          },
-          {
-            featureType: 'poi',
-            elementType: 'labels.text.fill',
-            stylers: [{color: '#757575'}]
-          },
-          {
-            featureType: 'poi.park',
-            elementType: 'geometry',
-            stylers: [{color: '#e5e5e5'}]
-          },
-          {
-            featureType: 'poi.park',
-            elementType: 'labels.text.fill',
-            stylers: [{color: '#9e9e9e'}]
-          },
-          {
-            featureType: 'road',
-            elementType: 'geometry',
-            stylers: [{color: '#ffffff'}]
-          },
-          {
-            featureType: 'road.arterial',
-            elementType: 'labels.text.fill',
-            stylers: [{color: '#757575'}]
-          },
-          {
-            featureType: 'road.highway',
-            elementType: 'geometry',
-            stylers: [{color: '#dadada'}]
-          },
-          {
-            featureType: 'road.highway',
-            elementType: 'labels.text.fill',
-            stylers: [{color: '#616161'}]
-          },
-          {
-            featureType: 'road.local',
-            elementType: 'labels.text.fill',
-            stylers: [{color: '#9e9e9e'}]
-          },
-          {
-            featureType: 'transit.line',
-            elementType: 'geometry',
-            stylers: [{color: '#e5e5e5'}]
-          },
-          {
-            featureType: 'transit.station',
-            elementType: 'geometry',
-            stylers: [{color: '#eeeeee'}]
+            featureType: 'administrative.province',
+            elementType: 'all',
+            stylers: [{"visibility": "off"}]
           },
           {
             featureType: 'water',
             elementType: 'geometry',
-            stylers: [{color: '#c9c9c9'}]
+            stylers: [{color: blue}]
           },
           {
             featureType: 'water',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#9e9e9e'}]
+            stylers: [{color: grey}]
           }
         ]
   });
@@ -99,7 +57,15 @@ function initMap() {
   for (i = 0; i < footer.length; i++) {
     let marker = new google.maps.Marker({
       position: new google.maps.LatLng(footer[i].contact.address.lat, footer[i].contact.address.long),
-      map: map
+      map: map,
+      icon: {
+    		path: 'M0-48c-9.8 0-17.7 7.8-17.7 17.4 0 15.5 17.7 30.6 17.7 30.6s17.7-15.4 17.7-30.6c0-9.6-7.9-17.4-17.7-17.4z',
+    		fillColor: yellow,
+    		fillOpacity: 1,
+    		strokeColor: black,
+    		strokeWeight: 1,
+        scale: .5
+    	}
     });
 
     //extend the bounds to include each marker's position
