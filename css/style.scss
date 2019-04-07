@@ -49,6 +49,19 @@ p {
   flex-direction: column;
 }
 
+.overlay{
+  @include size(100vw, 100vh);
+  background:  rgba(0,0,0,0.4);
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 20;
+}
+
+.avoid-scroll{
+  overflow:hidden;
+}
+
 //modules
 @import 'modules/header';
 @import 'modules/home';

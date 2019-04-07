@@ -41,6 +41,11 @@
 
 .slide {
   transform: translateY(-75vh);
+  * > {width: 100%}
+  a{
+    background-color: blue;
+    &:hover{ color: $green80}
+  }
 }
 
 
@@ -106,4 +111,10 @@ button {
   max-height : 75vw  ;
   @include full-page ;
   background-color: $grey50;
+}
+
+
+.slide button{
+  background-color: darken($green, 5)!important;
+  width: 100%!important;
 }

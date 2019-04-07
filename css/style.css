@@ -45,6 +45,20 @@ p {
   flex-direction: column;
 }
 
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.avoid-scroll {
+  overflow: hidden;
+}
+
 .header-nav {
   left: 0;
   bottom: 0;
@@ -578,6 +592,18 @@ p {
   transform: translateY(-75vh);
 }
 
+.slide * > {
+  width: 100%;
+}
+
+.slide a {
+  background-color: blue;
+}
+
+.slide a:hover {
+  color: #2b3618;
+}
+
 .exit {
   position: absolute;
   top: 10px;
@@ -646,6 +672,11 @@ button:hover {
   width: 100vw;
   margin: 0 -10vw;
   background-color: #dadada;
+}
+
+.slide button {
+  background-color: darkolivegreen !important;
+  width: 100% !important;
 }
 
 footer {
