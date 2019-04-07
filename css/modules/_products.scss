@@ -12,11 +12,11 @@
   margin-bottom: 60pt;
   padding: 20px 0;
 
+
   @include min800 {
     width          : 100%;
     flex-direction : row;
-    margin-top     : $logoDia / 2;
-    margin-bottom: inherit;
+    margin-bottom: 0;
     justify-content: center;
   }
   .svg-microgreens { background-image: url("../svg/microgreens.svg"); }
@@ -37,7 +37,7 @@
       background-color: $green40;
     }
     @include min800 {
-      @include size  (calc((80vw - 60px)/3), calc((80vw - 60px)/3));
+      @include size  (calc((70vw - 60px)/3), calc((70vw - 60px)/3));
     }
 
     h2 {

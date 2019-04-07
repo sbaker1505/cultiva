@@ -26,7 +26,7 @@
 
     &-image {
       @include size(150px, 150px);
-      background-color: $grey40;
+      background-color: $grey50;
       border-radius: 50%;
     }
 
@@ -60,29 +60,44 @@
   padding-top: 50px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
 }
 
 input, textarea {
   font-size: 1rem;
-  padding: 5px;
+  padding: 10px;
   margin: 10px 0;
-  border: 1px solid $grey40;
+  border: 1px solid $grey50;
+  min-width: 100%;
+  outline: none;
+  border-radius: 2px;
+  &:active, &:focus{
+    border-color: $green;
+
+  }
 }
 
 textarea {
   min-height: 100px;
-  max-width: 100%;
+  width: 980px;
 }
 
 button {
   font-size: 1rem;
   font-weight: bold;
-  padding: 5px;
+  padding: 0px 8px;
   margin: 10px 0;
-  @include size(100px, 50px);
+  color: $white;
+  @include size(100px, 45px);
   border-radius: 25px;
-  background-color: $grey40;
+  background-color: $green;
   border: none;
+  &:hover{
+    cursor: pointer;
+    background-color: darken($green, 5);
+  }
 }
 
 #map {
@@ -90,5 +105,5 @@ button {
   overflow   : hidden;
   max-height : 75vw  ;
   @include full-page ;
-  background-color: $grey40;
+  background-color: $grey50;
 }

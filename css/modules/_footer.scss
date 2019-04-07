@@ -9,7 +9,7 @@ footer {
     @include full-page;
     align-items     : center;
     justify-content : center;
-    background-color: $grey40 ;
+    background-color: $grey50 ;
     padding: 30px 0;
   }
 
@@ -34,6 +34,7 @@ footer {
 .social {
   margin-right: 10px;
   @include transition(color);
+  transition-duration: 200ms;
   &:hover, &:active {
     color: $green40;
   }
