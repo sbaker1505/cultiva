@@ -1,21 +1,23 @@
 // main:../style.scss
 
 .products {
-  margin         : 10px 0;
+  // margin         : auto;
   display        : flex;
   flex-wrap      : wrap;
   align-items    : center;
   flex-direction : column;
   justify-content: space-between;
+  align-self: center;
+  flex-grow: 1;
+  margin-bottom: 60pt;
+  padding: 20px 0;
 
   @include min800 {
     width          : 100%;
-    margin-bottom  : 0;
     flex-direction : row;
-    height         : $altProductHeight;
     margin-top     : $logoDia / 2;
-    justify-content: space-between;
-    // background-color: red;
+    margin-bottom: inherit;
+    justify-content: center;
   }
   .svg-microgreens { background-image: url("../svg/microgreens.svg"); }
   .svg-flowers     { background-image: url("../svg/flores.svg"); }

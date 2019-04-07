@@ -19,14 +19,10 @@ body {
   margin: auto;
   font-size: 16px;
   line-height: 1.5rem;
-  margin-bottom: 50pt;
   background-color: white;
-}
-
-@media only screen and (min-width: 800px) {
-  body {
-    margin-bottom: auto;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 p {
@@ -36,7 +32,9 @@ p {
 }
 
 #main {
-  margin-bottom: 60pt;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-nav {
@@ -295,22 +293,24 @@ p {
 }
 
 .products {
-  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  align-self: center;
+  flex-grow: 1;
+  margin-bottom: 60pt;
+  padding: 20px 0;
 }
 
 @media only screen and (min-width: 800px) {
   .products {
     width: 100%;
-    margin-bottom: 0;
     flex-direction: row;
-    height: calc(100vh - (150px * 1.5));
     margin-top: 75px;
-    justify-content: space-between;
+    margin-bottom: inherit;
+    justify-content: center;
   }
 }
 
