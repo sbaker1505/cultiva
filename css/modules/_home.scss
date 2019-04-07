@@ -8,7 +8,7 @@
   align-items: center;
   @include full-page ;
   justify-content : center ;
-  background-color: $grey40;
+  background-color: $grey50;
 
   img {
     width     : 100% ;
@@ -23,7 +23,8 @@
   max-width: 980px;
 
   img {
-    max-height: 150px;
+    max-height: 100px;
+    margin-top: 30px;
   }
 }
 
