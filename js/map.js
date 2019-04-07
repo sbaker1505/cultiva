@@ -71,9 +71,10 @@ function initMap() {
     //extend the bounds to include each marker's position
     bounds.extend(marker.position);
 
+    const content = `<div>${footer[i].contact.address.city + ', ' + footer[i].contact.address.country}</div>`;
     google.maps.event.addListener(marker, 'click', (function(marker, i) {
       return function() {
-        infowindow.setContent(footer[i].contact.address.city);
+        infowindow.setContent(content);
         infowindow.open(map, marker);
       }
     })(marker, i));
@@ -84,7 +85,7 @@ function initMap() {
 
   //(optional) restore the zoom level after the map is done scaling
   let listener = google.maps.event.addListener(map, "idle", function () {
-      map.setZoom(3);
+      // map.setZoom(3);
       google.maps.event.removeListener(listener);
   });
 }

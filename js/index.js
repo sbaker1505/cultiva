@@ -146,15 +146,17 @@ function FooterPage() {
 function ContactPage(){
   const MainContent = $('#main');
   const BodyContent = $('body');
-
+  const email = 'sbaker1505@gmail.com';
   MainContent.html('')
     .append(`
       <div id="map"></div>
-      <form class="contact-form" action="https://formspree.io/sbaker1505@gmail.com" method="POST">
+      <form class="contact-form" action="https://formspree.io/${email}" method="POST">
         <input type="hidden" name="_language" value="${lang}" />
-        <input type="text" name="name">
-        <input type="text" name="_replyto">
-        <input type="submit" value="Send">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="_replyto" placeholder="Email">
+        <input type="tel" name="phone" placeholder="Phone (Optional)">
+        <textarea type="text" name="message" maxlength="500" placeholder="Add message here."></textarea>
+        <button type="submit" value="Send">Send</button>
       </form>
     `);
     BodyContent.append(`
