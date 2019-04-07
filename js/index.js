@@ -134,8 +134,8 @@ function FooterPage() {
         <p>${item.contact.address.city + ', ' + item.contact.address.country}</p>
       </div>
       <div class="icons">
-        <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
         <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a>
+        <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
       </div>
     </address>
   `))

@@ -10,6 +10,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  font-style: normal;
   font-family: 'neutraText', sans-serif;
 }
 
@@ -587,14 +588,23 @@ footer {
 
 @media only screen and (min-width: 800px) {
   footer {
-    height: 150px;
+    height: auto;
     display: flex;
     width: 100vw;
     margin: 0 -10vw;
     align-items: center;
     justify-content: center;
-    background-color: #6D6E71;
+    background-color: #d4d5d6;
+    padding: 30px 0;
   }
+}
+
+footer address {
+  width: 100%;
+}
+
+footer address:first-of-type {
+  margin-right: 40px;
 }
 
 .contact {
@@ -603,14 +613,16 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  width: 80vw;
+  max-width: 980px;
 }
 
-.contact > * {
-  margin: 0 20px;
+.icons {
+  margin-top: 15px;
 }
 
 .social {
-  margin: 15px;
+  margin-right: 10px;
   transition-property: color;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
