@@ -3,18 +3,20 @@
 
 footer {
   display: none;
-
   @include min800{
-    height  : $logoDia;
+    height  : auto;
     display : flex;
     @include full-page;
-
     align-items     : center;
     justify-content : center;
-    background-color: $grey ;
-
+    background-color: $grey40 ;
+    padding: 30px 0;
   }
 
+  address{
+    width: 100%;
+    &:first-of-type{margin-right: 40px;}
+  }
 }
 
 .contact {
@@ -23,13 +25,14 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-
-  & > * {
-    margin: 0 20px;
-  }
+  width: 80vw;
+  max-width: 980px;
 }
+
+.icons{margin-top: 15px}
+
 .social {
-  margin: 15px;
+  margin-right: 10px;
   @include transition(color);
   &:hover, &:active {
     color: $green40;
