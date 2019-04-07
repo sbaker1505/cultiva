@@ -32,7 +32,7 @@
 
       &.landscape {
         grid-column-end: span 2;
-        max-height: 250px;
+        height: 250px;
         @include max600 {
           grid-column-end: auto;
         }
