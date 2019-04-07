@@ -16,8 +16,8 @@
         stroke-width: 0;
       }
       .cls-4 {
-        stroke-miterlimit: 10;
-        stroke: url("#linear-gradient");
+        <!-- stroke-miterlimit: 10;
+        stroke: url("#linear-gradient"); -->
       }
     </style>
     <linearGradient id="linear-gradient" y1="-409.36" x2="250" y2="-409.36" gradientTransform="matrix(1, 0, 0, -1, 0, -284.36)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#637d37"/><stop offset="1" stop-color="#dece25"/></linearGradient>

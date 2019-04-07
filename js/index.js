@@ -127,7 +127,7 @@ function FooterPage() {
   footer.map(item => $('.contact').append(`
     <address class="${item.title.toLowerCase()}">
       <h3>${item.title}</h3>
-      <a href="tel:${item.contact.phone}">${item.contact.phoneFormatted}</a>
+      <a href="tel:${item.contact.phone}">${item.contact.phoneFormatted}</a><br>
       <a href="mailto:${item.contact.email}">${item.contact.email}</a>
       <div class="location">
         <p>${item.contact.address.street}</p>

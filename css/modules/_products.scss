@@ -19,36 +19,58 @@
     margin-bottom: 0;
     justify-content: center;
   }
+
+
   .svg-microgreens { background-image: url("../svg/microgreens.svg"); }
   .svg-flowers     { background-image: url("../svg/flores.svg"); }
   .svg-veggy       { background-image: url("../svg/vegetables.svg"); }
 
   [class*="svg-"] {
-    margin         : 10px;
+    margin         : 0px;
     display        : flex;
     flex-shrink    : 0;
     align-items    : center;
     border-radius  : 50%;
+    background-color: white;
     justify-content: center;
+    overflow: hidden;
     background-size: cover;
+
     @include size    (250px, 250px);
-    @include transition(background-color);
-    &:hover, &:active {
-      background-color: $green40;
-    }
+    @include transition(background-size);
     @include min800 {
       @include size  (calc((70vw - 60px)/3), calc((70vw - 60px)/3));
+      max-width: 350px;
+      max-height: 350px;
     }
 
     h2 {
-      color  : $green;
+      color: $green;
       margin : 0 -5px;
       padding: 20px 0;
-      width  : calc(100% + 10px);
+      width  : calc(100% + 0px);
       text-align      : center;
       font-weight     : bold;
       text-transform  : uppercase;
       background-color: $white;
     }
+  }
+}
+
+
+.border{
+  padding: 3px;
+  border-radius  : 50%;
+  margin: 15px;
+  background  : linear-gradient(to right, $green, $yellow);
+  overflow: hidden;
+}
+
+
+[class*="svg-"]:hover{
+  cursor: pointer;
+  h2 {
+    background  : linear-gradient(to right, $green, $yellow);
+    color: $white;
   }
 }
