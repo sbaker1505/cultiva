@@ -57,6 +57,9 @@ p {
 
 .avoid-scroll {
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 38px;
 }
 
 .header-nav {
@@ -548,13 +551,14 @@ p {
 
 .slider-contact {
   width: 100%;
-  height: 75vh;
+  height: auto;
   background-color: #637d37;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: fixed;
-  bottom: -75vh;
+  bottom: 0;
   left: 0;
+  transform: translateY(200vh);
   transition-property: all;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -571,25 +575,42 @@ p {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 150px;
+  height: auto;
 }
 
 .slider-address-image {
   width: 150px;
-  height: 150px;
+  height: auto;
   background-color: #dadada;
   border-radius: 50%;
 }
 
 .slider-address-info {
-  margin-left: 30px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.slider-address-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  background-color: darkolivegreen;
+  border-radius: 4px;
+}
+
+.slider-address-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
 .slide {
-  transform: translateY(-75vh);
+  transform: translateY(0);
 }
 
 .slide * > {
@@ -597,7 +618,8 @@ p {
 }
 
 .slide a {
-  background-color: blue;
+  width: 100%;
+  line-height: 40px;
 }
 
 .slide a:hover {

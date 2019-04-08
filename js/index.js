@@ -213,9 +213,9 @@ function ContactSlider(){
         <a class="slider-address-email  entypo-mail" href="mailto:${item.contact.email}"> Send Via Email</a>
         <a class="slider-address-location entypo-map"> Open with Maps</a>
         <div class="slider-address-icons">
-          <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"> Open Twitter</a><br>
-          <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"> Open Facebook</a><br>
-          <a href="${item.social.facebook.url}" class="social entypo-instagrem" alt="Facebook Icon"> Open Instagram</a>
+          <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a><br>
+          <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a><br>
+          <a href="${item.social.facebook.url}" class="social entypo-instagrem" alt="Facebook Icon"></a>
         </div>
       </div>
     </address>
@@ -298,6 +298,7 @@ function slide(){
   $('.slider-contact').toggleClass('slide');
   $('body').toggleClass('hasOverlay')
   $('html').toggleClass('avoid-scroll')
+
 
   open ?
   $('.overlay').remove() :
