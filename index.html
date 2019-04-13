@@ -26,7 +26,14 @@
     <!-- Page main content -->
     <main id='main' name="main">
       <section class="hero">
-        <img src="img/hero.jpg" alt="Hero Image for Cultiva">
+        <img src="img/hero.jpg"
+            srcset="img/hero.jpg 5120w,
+                    img/hero_2880.jpg 2880w,
+                    img/hero_2048.jpg 2048w,
+                    img/hero_1334.jpg 1334w,
+                    img/hero_800.jpg 800w,
+                    img/hero_640.jpg 640w"
+            alt="Hero Image for Cultiva">
       </section>
 
       <section class="about">
@@ -48,6 +55,7 @@
     <footer></footer>
 
     <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/images.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

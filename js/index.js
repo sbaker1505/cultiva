@@ -49,6 +49,7 @@ function loadPage(){
     page.addClass('desktop');
     FooterPage();
   }
+  if(page.hasClass('home'))        {HomePage()            } //🏠
   if(page.hasClass('images'))      {ImagePage()            } //🖼
   if(page.hasClass('contact-page')){ContactPage()          } //📞
   if(page.hasClass('microgreens')) {Products('microgreens')} //🥦
@@ -123,7 +124,16 @@ function HeaderNav(){
 
 //home page html populator
 function HomePage() {
-
+  const MainContent = $('#main');
+  const { name, srcset, alt, type } = images.hero;
+  MainContent.html('').append(`
+    <section class="hero">
+      <img src="img/${name + '.' + type}"
+          srcset="${srcset.map(num =>
+            `img/${name + '_' + num + '.' + type} ${num + 'w'} `)}"
+          alt="${alt[lang]}">
+    </section>
+  `)
 }
 
 //footer page html populator
