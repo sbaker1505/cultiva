@@ -18,6 +18,8 @@ window.addEventListener('scroll', function() {
 });
 
 $(window).resize(function(){
+  let open = $('body').hasClass('hasOverlay');
+
   if(window.innerWidth <= 800 && page.hasClass('desktop')){
     page.removeClass('desktop').addClass('mobile')
     HeaderNav();
@@ -33,7 +35,6 @@ $(window).resize(function(){
     } else {
       $('.slider-contact').remove();
     }
-
   }
 })
 
@@ -171,27 +172,53 @@ function ContactPage(){
 }
 
 //contactSlider html populator
+// function ContactSlider(){
+//   $('header').append(`
+//     <div class="slider-contact">
+//
+//       <button onclick=slide()>Cancel</button>
+//     </div>
+//   `)
+//   footer.map(item => $('.slider-contact').prepend(`
+//     <address class="slider-address ${item.title.toLowerCase()}">
+//       <img class="slider-address-image" src="
+//       https://maps.googleapis.com/maps/api/staticmap?center=${item.contact.address.lat + ',' + item.contact.address.long}&zoom=13&size=150x150&maptype=roadmap&markers=size:mid%7Ccolor:red%7C${item.contact.address.lat + ',' + item.contact.address.long}&key=${GAPI}" alt="Map of Cultiva ${item.title} location">
+//       <div class="slider-address-info">
+//         <h3 class="slider-address-name">${item.title}</h3>
+//         <a class="slider-address-phone" href="tel:${item.contact.phone}">${item.contact.phoneFormatted}</a>
+//         <a class="slider-address-email" href="mailto:${item.contact.email}">${item.contact.email}</a>
+//         <div class="slider-address-location">
+//         <p>${item.contact.address.street}</p>
+//         <p>${item.contact.address.city + ', ' + item.contact.address.country}</p>
+//         </div>
+//         <div class="slider-address-icons">
+//           <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
+//           <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a>
+//         </div>
+//       </div>
+//     </address>
+//   `))
+// }
+
+
 function ContactSlider(){
   $('header').append(`
     <div class="slider-contact">
-      <div class="exit entypo-cancel" onclick="slide()"></div>
+      <button onclick=slide()>Cancel</button>
     </div>
   `)
-  footer.map(item => $('.slider-contact').append(`
+  footer.map(item => $('.slider-contact').prepend(`
     <address class="slider-address ${item.title.toLowerCase()}">
-      <img class="slider-address-image" src="
-      https://maps.googleapis.com/maps/api/staticmap?center=${item.contact.address.lat + ',' + item.contact.address.long}&zoom=13&size=150x150&maptype=roadmap&markers=size:mid%7Ccolor:red%7C${item.contact.address.lat + ',' + item.contact.address.long}&key=${GAPI}" alt="Map of Cultiva ${item.title} location">
+
       <div class="slider-address-info">
         <h3 class="slider-address-name">${item.title}</h3>
-        <a class="slider-address-phone" href="tel:${item.contact.phone}">${item.contact.phoneFormatted}</a>
-        <a class="slider-address-email" href="mailto:${item.contact.email}">${item.contact.email}</a>
-        <div class="slider-address-location">
-        <p>${item.contact.address.street}</p>
-        <p>${item.contact.address.city + ', ' + item.contact.address.country}</p>
-        </div>
+        <a class="slider-address-phone entypo-phone" href="tel:${item.contact.phone}">Call via Phone </a>
+        <a class="slider-address-email  entypo-mail" href="mailto:${item.contact.email}"> Send Via Email</a>
+        <a class="slider-address-location entypo-map"> Open with Maps</a>
         <div class="slider-address-icons">
-          <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
-          <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a>
+          <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a><br>
+          <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a><br>
+          <a href="${item.social.facebook.url}" class="social entypo-instagrem" alt="Facebook Icon"></a>
         </div>
       </div>
     </address>
@@ -269,7 +296,16 @@ $('.lang').click(function(){
 
 //slider toggle
 function slide(){
+  let open = $('body').hasClass('hasOverlay');
+
   $('.slider-contact').toggleClass('slide');
+  $('body').toggleClass('hasOverlay')
+  $('html').toggleClass('avoid-scroll')
+
+
+  open ?
+  $('.overlay').remove() :
+  $('body').append("<div class='overlay'></div>")
 }
 
 //renderView
