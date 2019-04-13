@@ -27,7 +27,13 @@ $(window).resize(function(){
     page.removeClass('mobile').addClass('desktop')
     HeaderNav();
     FooterPage();
-    $('.slider-contact').remove();
+    if ($('.slider-contact').hasClass('slide')) {
+      slide()
+      setTimeout(function(){$('.slider-contact').remove();}, 300)
+    } else {
+      $('.slider-contact').remove();
+    }
+
   }
 })
 
