@@ -126,13 +126,27 @@ function HeaderNav(){
 //home page html populator
 function HomePage() {
   const MainContent = $('#main');
-  const { name, srcset, alt, format } = images.hero;
+  const { name, srcset, alt, format } = home.hero;
+  const { what, who } = home;
   MainContent.html('').append(`
     <section class="hero">
       <img src="img/${name + '_' + srcset[0] + format}"
-          srcset="${srcset.map(num =>
-            `img/${name + '_' + num + format} ${num + 'w'} `)}"
-          alt="${alt[lang]}">
+        srcset="${srcset.map(num =>
+          `img/${name + '_' + num + format} ${num + 'w'} `)}"
+        alt="${alt[lang]}">
+    </section>
+    <section class="about">
+      <img src="svg/icon.svg" alt="Cultiva logo icon" class="logo-icon">
+      <article class="intro">
+        <div class="text">
+          <h1>${what.title[lang]}</h1>
+          <p>${what.content[lang]}</p>
+        </div>
+        <div class="text">
+          <h1>${who.title[lang]}</h1>
+          <p>${who.content[lang]}</p>
+        </div>
+      </article>
     </section>
   `)
 }

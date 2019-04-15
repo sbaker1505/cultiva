@@ -3,15 +3,6 @@ const images = {
     en: 'Images',
     es: 'Imágenes'
   },
-  hero: {
-    name: 'hero',
-    srcset: [640, 800, 1334, 2048, 2880, 5120],
-    alt: {
-      en: 'Hero image for Cultiva',
-      es: '???',
-    },
-    format: '.jpg'
-  },
   images:[
    {
      url: 'Cultiva_image-1.jpg',
