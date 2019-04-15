@@ -125,12 +125,12 @@ function HeaderNav(){
 //home page html populator
 function HomePage() {
   const MainContent = $('#main');
-  const { name, srcset, alt, type } = images.hero;
+  const { name, srcset, alt, format } = images.hero;
   MainContent.html('').append(`
     <section class="hero">
-      <img src="img/${name + '.' + type}"
+      <img src="img/${name + '_' + srcset[0] + format}"
           srcset="${srcset.map(num =>
-            `img/${name + '_' + num + '.' + type} ${num + 'w'} `)}"
+            `img/${name + '_' + num + format} ${num + 'w'} `)}"
           alt="${alt[lang]}">
     </section>
   `)
@@ -239,6 +239,7 @@ function ContactSlider(){
 function Products(type) {
   const list = catalog[type][type];
   const { title } = catalog[type];
+  const { srcset, format } = catalog[type].imageSizes;
 
   //add Title
   const MainContent = $('#main');
@@ -253,7 +254,11 @@ function Products(type) {
   const ProductList = $('.product-list');
   list.map(item => ProductList.append(`
     <div class="product-item" id="${type[0] + item.id}">
-      <img src="../img/${type + '/' + item.image[0]}" alt=""/>
+      <img src="../img/${type + '/' + item.image + '_' + srcset[0] + format}"
+        srcset="${srcset.map(num =>
+          `../img/${type + '/' + item.image + '_' + num + format} ${num + 'w'} `)}"
+        sizes="250px"
+        alt=""/>
       <h3>${item.name[lang]}</h3>
       <div class="details">
         <div class="taste">

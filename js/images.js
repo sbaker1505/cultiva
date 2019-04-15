@@ -5,12 +5,12 @@ const images = {
   },
   hero: {
     name: 'hero',
-    srcset: [2880, 2048, 1334, 800, 640],
+    srcset: [640, 800, 1334, 2048, 2880, 5120],
     alt: {
       en: 'Hero image for Cultiva',
       es: '???',
     },
-    type: 'jpg'
+    format: '.jpg'
   },
   images:[
    {

@@ -4,12 +4,16 @@ const catalog = {
       en: 'Microgreens',
       es: 'Microgreens'
     },
+    imageSizes: {
+      srcset: [900, 600, 300],
+      format: '.jpg'
+    },
     microgreens: [
       {
         name: {     en: 'Red Veined Sorrel',
                     es: 'Acedera'},
         id:             '0001',
-        image: [        'acedera.jpg'],
+        image:  'acedera',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -21,7 +25,7 @@ const catalog = {
         name: {     en: 'Rainbow Chard',
         es: 'Acelga Arco Iris'},
         id:             '0002',
-        image: [        'acelga_arco_iris.jpg'],
+        image:        'acelga_arco_iris',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -33,7 +37,7 @@ const catalog = {
         name: {     en: 'Lemon Basil',
         es: 'Albahaca Limón'},
         id:             '0003',
-        image: [        'albahaca_limon.jpg'],
+        image:        'albahaca_limon',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -45,7 +49,7 @@ const catalog = {
         name: {     en: 'Red Rubin Basil',
         es: 'Albahaca Morada'},
         id:             '0004',
-        image: [        'albahaca_morada.jpg'],
+        image:        'albahaca_morada',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -57,7 +61,7 @@ const catalog = {
         name: {     en: 'Amaranth',
         es: 'Amaranto Rojo'},
         id:             '0005',
-        image: [        'amaranto.jpg'],
+        image:        'amaranto',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -69,7 +73,7 @@ const catalog = {
         name: {     en: 'Anise',
         es: 'Anís'},
         id:             '0006',
-        image: [        'anis.jpg'],
+        image:        'anis',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -81,7 +85,7 @@ const catalog = {
         name: {     en: 'Celery',
         es: 'Apio'},
         id:             '0007',
-        image: [        'apio.jpg'],
+        image:        'apio',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -93,7 +97,7 @@ const catalog = {
         name: {     en: 'Lemon Balm',
         es: 'Bálsamo Limón'},
         id:             '0008',
-        image: [        'balsamo_limon.jpg'],
+        image:        'balsamo_limon',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -105,7 +109,7 @@ const catalog = {
         name: {     en: 'Broccoli',
         es: 'Brócoli'},
         id:             '0009',
-        image: [        'brocoli.jpg'],
+        image:        'brocoli',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -117,7 +121,7 @@ const catalog = {
         name: {     en: 'Cabbage',
         es: 'Col'},
         id:             '0010',
-        image: [        'col.jpg'],
+        image:        'col',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -129,7 +133,7 @@ const catalog = {
         name: {     en: 'Red Cabbage',
         es: 'Col Morada'},
         id:             '0011',
-        image: [        'col_morada.jpg'],
+        image:        'col_morada',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -141,7 +145,7 @@ const catalog = {
         name: {     en: 'Shungiku',
         es: 'Crisantemo'},
         id:             '0012',
-        image: [        'crisantemo.jpg'],
+        image:        'crisantemo',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -153,7 +157,7 @@ const catalog = {
         name: {     en: 'Cilantro',
         es: 'Culantro'},
         id:             '0013',
-        image: [        'culantro.jpg'],
+        image:        'culantro',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -165,7 +169,7 @@ const catalog = {
         name: {     en: 'Kale',
         es: 'Kale (Acelga Rusa)'},
         id:             '0014',
-        image: [        'kale.jpg'],
+        image:        'kale',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -177,7 +181,7 @@ const catalog = {
         name: {     en: 'Magenta Spreen',
         es: 'Magenta'},
         id:             '0015',
-        image: [        'magenta.jpg'],
+        image:        'magenta',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -189,7 +193,7 @@ const catalog = {
         name: {     en: 'Tatsoi',
         es: 'Mostaza Espinaca (Tatsoi)'},
         id:             '0016',
-        image: [        'mostaza_espinaca.jpg'],
+        image:        'mostaza_espinaca',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -201,7 +205,7 @@ const catalog = {
         name: {     en: 'Garnet Gaint Mustard',
         es: 'Mostaza Gigante'},
         id:             '0017',
-        image: [        'mostaza_gigante.jpg'],
+        image:        'mostaza_gigante',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -213,7 +217,7 @@ const catalog = {
         name: {     en: 'Mizuna',
         es: 'Mostaza Japonesa'},
         id:             '0018',
-        image: [        'mostaza_japonesa.jpg'],
+        image:        'mostaza_japonesa',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -225,7 +229,7 @@ const catalog = {
         name: {     en: 'Miz America Mizuna',
         es: 'Mostaza Japonesa Morada'},
         id:             '0019',
-        image: [        'mostaza_japonesa_morada.jpg'],
+        image:        'mostaza_japonesa_morada',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -237,7 +241,7 @@ const catalog = {
         name: {     en: 'Red Pac Choi',
         es: 'Pac Choi'},
         id:             '0020',
-        image: [        'pac_choi.jpg'],
+        image:        'pac_choi',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -249,7 +253,7 @@ const catalog = {
         name: {     en: 'Radish',
         es: 'Rábano'},
         id:             '0021',
-        image: [        'rabano.jpg'],
+        image:        'rabano',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -261,7 +265,7 @@ const catalog = {
         name: {     en: 'Beet/Bull\'s Blood Beet',
         es: 'Remolacha/Remolacha Roja'},
         id:             '0022',
-        image: [        'remolacha.jpg'],
+        image:        'remolacha',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -273,7 +277,7 @@ const catalog = {
         name: {     en: 'Arugula',
         es: 'Rúcula'},
         id:             '0023',
-        image: [        'rucula.jpg'],
+        image:        'rucula',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -285,7 +289,7 @@ const catalog = {
         name: {     en: 'Red Gruner Purslane',
         es: 'Verdolaga'},
         id:             '0024',
-        image: [        'verdolaga.jpg'],
+        image:        'verdolaga',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -297,7 +301,7 @@ const catalog = {
         name: {     en: 'Wasabi Arugula',
         es: 'Wasabi'},
         id:             '0025',
-        image: [        'wasabi.jpg'],
+        image:        'wasabi',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -309,7 +313,7 @@ const catalog = {
         name: {     en: 'Carrot',
         es: 'Zanahoria'},
         id:             '0026',
-        image: [        'zanahoria.jpg'],
+        image:        'zanahoria',
         keywords: [     'microgreens'],
         description: {
           taste: {  en: 'english text here',
@@ -325,13 +329,17 @@ const catalog = {
       en: 'Edible Flowers',
       es: 'Flores Comestibles'
     },
+    imageSizes: {
+      srcset: [900, 600, 300],
+      format: '.jpg'
+    },
     flowers: [
       {
         name: {     en: 'Anise Hyssop',
         es: 'Anís'},
         id:             '0001',
         size:           'small',
-        image: [        'anis.jpg'    ],
+        image:        'anis',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -344,7 +352,7 @@ const catalog = {
         es: 'Azulina'},
         id:             '0002',
         size:           'medium',
-        image: [        'azulina.jpg'  ],
+        image:        'azulina',
         keywords: [     'flowers'      ],
         description: {
           taste: {  en: 'english text here',
@@ -357,8 +365,7 @@ const catalog = {
         es: 'Begonia'},
         id:             '0003',
         size:           'small',
-        image: [        'begonia1.jpg',
-        'begonia2.jpg'  ],
+        image:        'begonia1',
         keywords: [     'flowers'       ],
         description: {
           taste: {  en: 'english text here',
@@ -371,7 +378,7 @@ const catalog = {
         es: 'Borraja'},
         id:             '0004',
         size:           'small',
-        image: [        'borraja.jpg' ],
+        image:        'borraja',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -384,9 +391,7 @@ const catalog = {
         es: 'Capuchina'},
         id:             '0005',
         size:           'large',
-        image: [        'capuchina1.jpg',
-        'capuchina2.jpg',
-        'capuchina3.jpg'  ],
+        image:        'capuchina1',
         keywords: [     'flowers'         ],
         description: {
           taste: {  en: 'english text here',
@@ -399,7 +404,7 @@ const catalog = {
         es: 'Chavelina'},
         id:             '0006',
         size:           'small',
-        image: [        'chavelina.jpg' ],
+        image:        'chavelina',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -412,7 +417,7 @@ const catalog = {
         es: 'Durazno'},
         id:             '0007',
         size:           'small',
-        image: [        'durazno.jpg' ],
+        image:        'durazno',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -426,7 +431,7 @@ const catalog = {
         id:             '0008',
         size: [         'small',
         'medium'      ],
-        image: [        'mastuerzo.jpg' ],
+        image:        'mastuerzo',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -439,7 +444,7 @@ const catalog = {
         es: 'Lavanda'},
         id:             '0009',
         size:           'small',
-        image: [        'lavanda.jpg' ],
+        image:        'lavanda',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -452,7 +457,7 @@ const catalog = {
         es: 'Limón'},
         id:             '0010',
         size:           'small',
-        image: [        'limon.jpg' ],
+        image:        'limon',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -465,7 +470,7 @@ const catalog = {
         es: 'Mandarina'},
         id:             '0011',
         size:           'small',
-        image: [        'mandarina.jpg' ],
+        image:        'mandarina',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -478,10 +483,7 @@ const catalog = {
         es: 'Mini Pensamientos'},
         id:             '0012',
         size:           'small',
-        image: [        'mini_pensamientos1.jpg',
-        'mini_pensamientos2.jpg',
-        'mini_pensamientos3.jpg',
-        'mini_pensamientos4.jpg',],
+        image:        'mini_pensamientos1',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -494,7 +496,7 @@ const catalog = {
         es: 'Mostaza'},
         id:             '0013',
         size:           'small',
-        image: [        'mostaza.jpg',],
+        image:        'mostaza',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -507,10 +509,7 @@ const catalog = {
         es: 'Pensamientos'},
         id:             '0014',
         size:           'large',
-        image: [        'pensamientos1.jpg',
-        'pensamientos2.jpg',
-        'pensamientos3.jpg',
-        'pensamientos4.jpg',],
+        image:        'pensamientos1',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -523,7 +522,7 @@ const catalog = {
         es: 'Ramo de Novia'},
         id:             '0015',
         size:           'small',
-        image: [        'ramo_de_novia.jpg'],
+        image:        'ramo_de_novia',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -536,7 +535,7 @@ const catalog = {
         es: 'Salvia'},
         id:             '0016',
         size:           'small',
-        image: [        'salvia.jpg'],
+        image:        'salvia',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -549,7 +548,7 @@ const catalog = {
         es: 'Marisol (Claudia - Mango)'},
         id:             '0017',
         size:           'large',
-        image: [        'claudia_mango.jpg'],
+        image:        'claudia_mango',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
@@ -562,7 +561,7 @@ const catalog = {
         es: 'Volcán'},
         id:             '0018',
         size:           'small',
-        image: [        'volcan.jpg'],
+        image:        'volcan',
         keywords: [     'flowers'     ],
         description: {
           taste: {  en: 'english text here',
