@@ -1,0 +1,23 @@
+{
+  "name": "cultiva",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbaker1505/cultiva.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbaker1505/cultiva/issues"
+  },
+  "homepage": "https://github.com/sbaker1505/cultiva#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-responsive-images": "^1.10.1"
+  }
+}
