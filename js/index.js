@@ -43,7 +43,8 @@ function loadPage(){
   Language();
   HeaderNav();
   if (window.innerWidth <= 800){
-    page.addClass('mobile')
+    page.addClass('mobile');
+    $('.slider-contact').remove();
     ContactSlider();
   } else {
     page.addClass('desktop');
