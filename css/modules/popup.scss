@@ -1,0 +1,18 @@
+// main:../style.scss
+
+.popup {
+  &-cover{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($grey, .6);
+  }
+
+  &-container {
+    margin: 120px 30px;
+    background-color: $white;
+    padding: 30px;
+  }
+}

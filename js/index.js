@@ -168,6 +168,7 @@ function FooterPage() {
       <div class="icons">
         <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a>
         <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
+        <a href="${item.social.instagram.url}" class="social entypo-instagrem" alt="Instagram Icon"></a>
       </div>
     </address>
   `))
@@ -196,40 +197,10 @@ function ContactPage(){
     `)
 }
 
-//contactSlider html populator
-// function ContactSlider(){
-//   $('header').append(`
-//     <div class="slider-contact">
-//
-//       <button onclick=slide()>Cancel</button>
-//     </div>
-//   `)
-//   footer.map(item => $('.slider-contact').prepend(`
-//     <address class="slider-address ${item.title.toLowerCase()}">
-//       <img class="slider-address-image" src="
-//       https://maps.googleapis.com/maps/api/staticmap?center=${item.contact.address.lat + ',' + item.contact.address.long}&zoom=13&size=150x150&maptype=roadmap&markers=size:mid%7Ccolor:red%7C${item.contact.address.lat + ',' + item.contact.address.long}&key=${GAPI}" alt="Map of Cultiva ${item.title} location">
-//       <div class="slider-address-info">
-//         <h3 class="slider-address-name">${item.title}</h3>
-//         <a class="slider-address-phone" href="tel:${item.contact.phone}">${item.contact.phoneFormatted}</a>
-//         <a class="slider-address-email" href="mailto:${item.contact.email}">${item.contact.email}</a>
-//         <div class="slider-address-location">
-//         <p>${item.contact.address.street}</p>
-//         <p>${item.contact.address.city + ', ' + item.contact.address.country}</p>
-//         </div>
-//         <div class="slider-address-icons">
-//           <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a>
-//           <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a>
-//         </div>
-//       </div>
-//     </address>
-//   `))
-// }
-
-
 function ContactSlider(){
   $('header').append(`
     <div class="slider-contact">
-      <button onclick=slide()>Cancel</button>
+      <button onclick="slide()">Cancel</button>
     </div>
   `)
   footer.map(item => $('.slider-contact').prepend(`
@@ -237,15 +208,18 @@ function ContactSlider(){
 
       <div class="slider-address-info">
         <h3 class="slider-address-name">${item.title}</h3>
-        <a class="slider-address-phone entypo-phone" href="tel:${item.contact.phone}">Call via Phone </a>
+        <a class="slider-address-phone entypo-phone" href="tel:${item.contact.phone}"> Call via Phone </a>
         <a class="slider-address-email  entypo-mail" href="mailto:${item.contact.email}"> Send Via Email</a>
         <a class="slider-address-location entypo-map"> Open with Maps</a>
+
         <div class="slider-address-icons">
           <a href="${item.social.twitter.url}" class="social entypo-twitter" alt="Twitter Icon"></a><br>
           <a href="${item.social.facebook.url}" class="social entypo-facebook-squared" alt="Facebook Icon"></a><br>
-          <a href="${item.social.facebook.url}" class="social entypo-instagrem" alt="Facebook Icon"></a>
+          <a href="${item.social.instagram.url}" class="social entypo-instagrem" alt="Facebook Icon"></a>
         </div>
+
       </div>
+
     </address>
   `))
 }
@@ -291,9 +265,17 @@ function Products(type) {
   //Click Event for Details
   $('.product-item').click(function(){
       let position = $(this).index() // where in the array
-      alert(
-      list[position].description.taste[lang] +"\n\n"+
-      list[position].description.look [lang])
+      $('body').append(`
+        <div class="popup-cover">
+          <div class="popup-container">
+            <button onclick="closePopup();">Cancel</button>
+            <h3>Taste</h3>
+            <p>${list[position].description.taste[lang]}</p>
+            <h3>Look</h3>
+            <p>${list[position].description.look[lang]}</p>
+          </div>
+        </div>
+      `)
     })
 }
 
@@ -310,7 +292,7 @@ function ImagePage(){
   const ImageList = $('.images-list');
   images.images.map(item => ImageList.append(`
     <div class="${item.view}" >
-      <img src="img/${item.url}" alt="${item.alt}" />
+      <img src="img/images/${item.url}" alt="${item.alt}" />
     </div>
     `))
 }
@@ -336,6 +318,12 @@ function slide(){
   open ?
   $('.overlay').remove() :
   $('body').append("<div class='overlay'></div>")
+}
+
+//close popup
+function closePopup(){
+  console.log('close')
+  $('.popup-cover').remove()
 }
 
 //renderView

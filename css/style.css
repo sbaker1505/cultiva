@@ -43,6 +43,7 @@ p {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .overlay {
@@ -305,7 +306,7 @@ p {
 }
 
 .about {
-  margin: 30px auto 0 auto;
+  width: 100%;
   padding-bottom: 50px;
   max-width: 980px;
 }
@@ -764,4 +765,19 @@ footer a:hover {
 
 .social:hover, .social:active {
   color: #637d37;
+}
+
+.popup-cover {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(90, 90, 90, 0.6);
+}
+
+.popup-container {
+  margin: 120px 30px;
+  background-color: white;
+  padding: 30px;
 }

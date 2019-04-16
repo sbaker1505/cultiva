@@ -51,6 +51,10 @@ const footer = [
         handle: '@CultivaEcuador',
         url: 'https://www.facebook.com/CultivaEcuador/'
       },
+      instagram: {
+        handle: '@CultivaEcuador',
+        url: 'https://www.facebook.com/CultivaEcuador/'
+      },
     },
     contact: {
       email: 'grupocultivavida@gmail.com',
@@ -74,7 +78,11 @@ const footer = [
       facebook: {
         handle: '',
         url: 'https://www.facebook.com/Cultiva-Kenya-2240433476201667/'
-      }
+      },
+      instagram: {
+        handle: '',
+        url: 'https://www.facebook.com/Cultiva-Kenya-2240433476201667/'
+      },
     },
     contact: {
       email: 'kenya@cultiva.com',
