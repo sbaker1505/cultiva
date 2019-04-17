@@ -35,12 +35,11 @@
 }
 
 // Positioning
-@mixin pAbsolute ($top: 0, $left: 0, $btm: null, $right: null){
-  position: absolute;
-  top:       $top;
-  left:      $left;
-  bottom:    $btm;
-  right:     $right;
+@mixin position ($t: 0, $r: 0, $b: 0, $l: 0){
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
 }
 
 @mixin transition ($a...) {

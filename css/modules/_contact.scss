@@ -5,47 +5,47 @@
   &-contact {
     @include size(100%, auto);
     background-color: $green;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    border-top-left-radius:   10px;
+    border-top-right-radius:  10px;
+    position:         fixed;
+    bottom:           0;
+    left:             0;
     transform: translateY(200vh);
     @include transition;
-    padding: 20px;
-    padding-top: 40px;
-    text-transform: none;
-    font-size: 1rem;
+    padding:          20px;
+    padding-top:      40px;
+    text-transform:   none;
+    font-size:        1rem;
   }
 
   &-address {
-    font-style: normal;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
+    font-style:       normal;
+    margin-bottom:    30px;
+    display:          flex;
+    flex-direction:   row;
     @include size(100%, auto);
 
     &-image {
       @include size(150px, auto);
-      background-color: $grey50;
-      border-radius: 50%;
+      background-color:       $grey50;
+      border-radius:          50%;
     }
 
     &-info {
-      width: 100%;
-      display: flex;
+      width:          100%;
+      display:        flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
     &-icons{
-      display: flex;
-      align-items: center;
+      display:        flex;
+      align-items:    center;
       justify-content: space-between;
-      width: 100%;
-      text-align: center;
+      width:          100%;
+      text-align:     center;
       background-color: darken($green, 5);
-      border-radius: 4px;
+      border-radius:  4px;
     }
 
     &-icons a{
@@ -60,10 +60,16 @@
 .slide {
   transform: translateY(0);
   * > {width: 100%}
-  a{
+
+  a {
     width: 100%;
     line-height: 40px;
     &:hover{ color: $green80}
+  }
+
+  button {
+    background-color: darken($green, 5)!important;
+    width: 100%!important;
   }
 }
 
@@ -80,6 +86,7 @@
   }
 }
 
+//contact page styles
 .contact-form {
   padding: 60px 0;
   display: flex;
@@ -129,10 +136,4 @@ button {
   max-height : 75vw  ;
   @include full-page ;
   background-color: $grey50;
-}
-
-
-.slide button{
-  background-color: darken($green, 5)!important;
-  width: 100%!important;
 }

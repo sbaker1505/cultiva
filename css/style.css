@@ -52,15 +52,17 @@ p {
   background: rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  z-index: 20;
 }
 
 .avoid-scroll {
-  overflow: hidden;
   position: fixed;
   top: 0;
-  left: 38px;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .header-nav {
@@ -633,6 +635,11 @@ p {
   color: #2b3618;
 }
 
+.slide button {
+  background-color: darkolivegreen !important;
+  width: 100% !important;
+}
+
 .exit {
   position: absolute;
   top: 10px;
@@ -701,11 +708,6 @@ button:hover {
   width: 100vw;
   margin: 0 -10vw;
   background-color: #dadada;
-}
-
-.slide button {
-  background-color: darkolivegreen !important;
-  width: 100% !important;
 }
 
 footer {
