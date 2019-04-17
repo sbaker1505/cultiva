@@ -200,10 +200,11 @@ function ContactPage(){
 function ContactSlider(){
   $('header').append(`
     <div class="slider-contact">
+      <div class="slider-contact-container"></div>
       <button onclick="slide()">Cancel</button>
     </div>
   `)
-  footer.map(item => $('.slider-contact').prepend(`
+  footer.map(item => $('.slider-contact-container').prepend(`
     <address class="slider-address ${item.title.toLowerCase()}">
 
       <div class="slider-address-info">

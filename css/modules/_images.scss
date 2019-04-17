@@ -16,6 +16,21 @@
     }
     &-title {
       margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+
+      &::before, &::after {
+        content: '';
+        background-color: $green40;
+        height: 1px;
+        flex: 1;
+      }
+
+      &::before { margin-right: 15px; }
+      &::after { margin-left: 15px; }
     }
   }
 

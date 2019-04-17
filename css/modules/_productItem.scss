@@ -29,8 +29,9 @@
       background-color: $green40;
       height: 1px;
       flex: 1;
-      margin: 0 10px;
     }
+    &::before { margin-right: 15px; }
+    &::after { margin-left: 15px; }
   }
 }
 
