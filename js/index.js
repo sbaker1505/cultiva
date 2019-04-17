@@ -2,7 +2,7 @@
 const page = $('html');
 let lang = localStorage.getItem("lang")
             ? localStorage.getItem("lang") :'es'
-
+let offset;
 
 //Scroll Event for Logo and Lang
 window.addEventListener('scroll', function() {
@@ -264,6 +264,9 @@ function Products(type) {
 
   //Click Event for Details
   $('.product-item').click(function(){
+    // offset = window.pageYOffset;
+    // $('.product-page').css('bottom', offset + 'px')
+    // $('html').toggleClass('avoid-scroll')
       let position = $(this).index() // where in the array
       $('body').append(`
         <div class="popup-cover">
@@ -322,8 +325,9 @@ function slide(){
 
 //close popup
 function closePopup(){
-  console.log('close')
   $('.popup-cover').remove()
+  // $('html').toggleClass('avoid-scroll')
+  // $('.product-page').css('bottom', 'inherit')
 }
 
 //renderView
