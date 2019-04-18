@@ -273,7 +273,8 @@ function Products(type) {
         </div>
       `)
     })
-  $('#f0001').click();
+  //use for styling only
+  // $('#f0001').click();
 }
 
 //create Image Page
