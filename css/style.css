@@ -448,7 +448,7 @@ p {
 
 @media only screen and (min-width: 800px) {
   .product-page {
-    margin-top: 200px;
+    margin-top: 150px;
   }
 }
 
@@ -457,7 +457,7 @@ p {
 }
 
 .product-page-title {
-  margin-bottom: 20px;
+  margin-bottom: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -848,14 +848,66 @@ footer a:hover {
 .popup-cover {
   position: fixed;
   top: 0;
-  bottom: 0;
+  bottom: 80px;
   left: 0;
   right: 0;
   background-color: rgba(90, 90, 90, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .popup-cover {
+    bottom: 0;
+  }
 }
 
 .popup-container {
   margin: 120px 30px;
   background-color: white;
   padding: 30px;
+  border-radius: 5px;
+  color: #2b3618;
+  max-width: 400px;
+}
+
+.popup-container button {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.popup-container h3:not(:first-child) {
+  margin-top: 30px;
+}
+
+.popup-container p {
+  margin-top: 5px;
+  color: #637d37;
+  font-weight: bold;
+}
+
+.popup-title {
+  color: #637d37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.popup-title::before, .popup-title::after {
+  content: '';
+  background-color: #c6d9a8;
+  height: 1px;
+  flex: 1;
+}
+
+.popup-title::before {
+  margin-right: 15px;
+}
+
+.popup-title::after {
+  margin-left: 15px;
 }

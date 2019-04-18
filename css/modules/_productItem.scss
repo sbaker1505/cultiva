@@ -11,13 +11,13 @@
   color: $green;
   text-transform: uppercase;
   @include min800 {
-    margin-top: $logoDia + 50px;
+    margin-top: $logoDia;
   }
   p {
     text-transform: none;
   }
   &-title {
-    margin-bottom: 20px;
+    margin-bottom: $logoDia/2;
     display: flex;
     justify-content: center;
     align-items: center;

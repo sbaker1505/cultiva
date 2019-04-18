@@ -201,7 +201,7 @@ function ContactSlider(){
   $('header').append(`
     <div class="slider-contact">
       <div class="slider-contact-container"></div>
-      <button onclick="slide()">Cancel</button>
+      <button onclick="slide()">Close</button>
     </div>
   `)
   footer.map(item => $('.slider-contact-container').prepend(`
@@ -250,18 +250,9 @@ function Products(type) {
         sizes="250px"
         alt=""/>
       <h3>${item.name[lang]}</h3>
-      <div class="details">
-        <div class="taste">
-          <h4>Taste</h4>
-          <p>${item.description.taste[lang]}</p>
-        </div>
-        <div class="look">
-          <h4>Look</h4>
-          <p class="look">${item.description.look[lang]}</p>
-        </div>
-      </div>
     </div>
   `));
+
 
   //Click Event for Details
   $('.product-item').click(function(){
@@ -272,15 +263,17 @@ function Products(type) {
       $('body').append(`
         <div class="popup-cover">
           <div class="popup-container">
-            <button onclick="closePopup();">Cancel</button>
+            <h2 class="popup-title">${list[position].name[lang]}</h2>
             <h3>Taste</h3>
             <p>${list[position].description.taste[lang]}</p>
             <h3>Look</h3>
             <p>${list[position].description.look[lang]}</p>
+            <button onclick="closePopup();">Close</button>
           </div>
         </div>
       `)
     })
+  $('#f0001').click();
 }
 
 //create Image Page
