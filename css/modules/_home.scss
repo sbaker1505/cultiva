@@ -27,26 +27,21 @@
 }
 
 .logo-icon {
-  // border: 1px solid red;
   width: 100%;
   display: flex;
   justify-content: center;
-  // max-height: 100px;
   margin-top: 30px;
+  @include min800{
+    max-height: 150px;
+  }
   svg {
     @include size(200px, 200px);
   }
   path {
     fill: url(#a) $green;
-    &.logo-cultiva {
-      fill: $black;
-    }
-
-
+    &.logo-cultiva {fill: $black;}
     @include min800 {
-      &:not(.logo-cultiva-icon){
-        display: none;
-      }
+      &:not(.logo-cultiva-icon){display: none;}
     }
   }
 }
