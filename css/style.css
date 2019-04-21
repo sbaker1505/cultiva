@@ -11,7 +11,8 @@
   text-decoration: none;
   list-style-type: none;
   font-style: normal;
-  font-family: 'neutraText', sans-serif;
+  font-family: 'neutra_textlight_alt', sans-serif;
+  font-display: swap;
 }
 
 body {
@@ -225,13 +226,15 @@ p {
 
 .logo {
   display: none;
+  padding: 4px;
   z-index: 99;
   width: 150px;
   height: 150px;
   flex-shrink: 0;
   border-radius: 50%;
   align-self: flex-start;
-  background: white;
+  justify-content: center;
+  align-items: center;
   position: relative;
   transition-property: all;
   transition-duration: 0.6s;
@@ -240,16 +243,18 @@ p {
 }
 
 .logo svg {
+  border-radius: 50%;
+  background-color: white;
   width: 100%;
 }
 
 @media only screen and (min-width: 800px) {
   .logo {
-    display: inherit;
+    display: flex;
   }
 }
 
-.logo:before {
+.logo::before {
   transition-property: opacity;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -258,11 +263,28 @@ p {
   content: '';
   width: 100%;
   height: 50%;
-  left: 0.5px;
   top: 50%;
   box-shadow: 0 -2px 14px 2px rgba(0, 0, 0, 0.2);
   position: absolute;
-  border-radius: 0 0 40pc 40pc;
+  border-radius: 0 0 calc(150px / 2) calc(150px / 2);
+  z-index: -2;
+}
+
+.logo::after {
+  transition-property: opacity;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: opacity;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: -1;
 }
 
@@ -271,18 +293,26 @@ p {
   background: transparent;
 }
 
+.scroll-logo svg {
+  background-color: inherit;
+}
+
 .scroll-logo svg > * {
   opacity: 0;
 }
 
-.scroll-logo .cls-2 {
+.scroll-logo .logo-cultiva {
   opacity: 1;
 }
 
-.scroll-logo:before {
+.scroll-logo::before {
   transition: none;
   transform: translateY(-300px);
   opacity: 0 !important;
+}
+
+.scroll-logo::after {
+  opacity: 0;
 }
 
 .on-page {

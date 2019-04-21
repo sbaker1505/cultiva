@@ -120,9 +120,9 @@ function HeaderNav(){
     `)
 
     if(page.hasClass('products-pages')){
-      $('.logo').load('../svg/logo.svg')
+      $('.logo').load('../svg/logo4.svg')
     } else {
-      $('.logo').load('svg/logo.svg')
+      $('.logo').load('svg/logo4.svg')
     }
 }
 
@@ -336,9 +336,7 @@ $(document).ready(loadPage)
 
 
 // Lazy load
-
 let inAdvance = 300
-
 function lazyLoad(images) {
     images.forEach(image => {
         if (image.offsetTop < window.innerHeight + window.pageYOffset + inAdvance) {

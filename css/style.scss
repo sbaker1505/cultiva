@@ -7,6 +7,8 @@
 /* entypo icons */
 [class*="entypo-"]:before { font: 1.5rem 'entypo', sans-serif }
 
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+
 * {
   margin    : 0;
   padding   : 0;
@@ -16,7 +18,8 @@
   list-style-type: none;
 
   font-style : normal;
-  font-family: 'neutraText', sans-serif;
+  font-family: 'neutra_textlight_alt', sans-serif;
+  font-display: swap;
 }
 
 body {
