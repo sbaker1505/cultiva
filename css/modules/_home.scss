@@ -18,14 +18,29 @@
 }
 
 .about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   padding-bottom: 50px;
   max-width: 980px;
+}
 
-  img {
-    max-height: 100px;
-    margin-top: 30px;
+.logo-icon {
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // max-height: 100px;
+  margin-top: 30px;
+  svg {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
   }
+}
+.logo-cultiva-icon {
+
 }
 
 .intro {

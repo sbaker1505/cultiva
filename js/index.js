@@ -8,8 +8,8 @@ let lazyImages;
 //Scroll Event for Logo and Lang
 window.addEventListener('scroll', function() {
   pageYOffset >= 20
-    ? $('.logo').addClass   ("scroll-logo")
-    : $('.logo').removeClass("scroll-logo")
+    ? $('.nav-logo').addClass   ("scroll-logo")
+    : $('.nav-logo').removeClass("scroll-logo")
   pageYOffset >= 40
     ? $('.lang').addClass   ("lang-scroll")
     : $('.lang').removeClass("lang-scroll")
@@ -93,7 +93,7 @@ function HeaderNav(){
       <span>${products.title[lang]}</span>
       </a>
     </div>
-    <div class="logo"></div>
+    <div class="nav-logo"></div>
     <div class="nav-link-container">
       <a href="${
         page.hasClass('products-pages')
@@ -120,9 +120,9 @@ function HeaderNav(){
     `)
 
     if(page.hasClass('products-pages')){
-      $('.logo').load('../svg/logo4.svg')
+      $('.nav-logo').load('../svg/logo4.svg')
     } else {
-      $('.logo').load('svg/logo4.svg')
+      $('.nav-logo').load('svg/logo4.svg')
     }
 }
 
@@ -139,7 +139,7 @@ function HomePage() {
         alt="${alt[lang]}">
     </section>
     <section class="about">
-      <img src="svg/icon.svg" alt="Cultiva logo icon" class="logo-icon">
+      <div class="logo-icon"></div>
       <article class="intro">
         <div class="text">
           <h1>${what.title[lang]}</h1>
@@ -152,6 +152,8 @@ function HomePage() {
       </article>
     </section>
   `)
+
+  $('.logo-icon').load('svg/logo4.svg')
 }
 
 //footer page html populator

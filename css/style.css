@@ -224,7 +224,7 @@ p {
   justify-content: flex-start;
 }
 
-.logo {
+.nav-logo {
   display: none;
   padding: 4px;
   z-index: 99;
@@ -242,19 +242,19 @@ p {
   will-change: all;
 }
 
-.logo svg {
+.nav-logo svg {
   border-radius: 50%;
   background-color: white;
   width: 100%;
 }
 
 @media only screen and (min-width: 800px) {
-  .logo {
+  .nav-logo {
     display: flex;
   }
 }
 
-.logo::before {
+.nav-logo::before {
   transition-property: opacity;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -270,7 +270,7 @@ p {
   z-index: -2;
 }
 
-.logo::after {
+.nav-logo::after {
   transition-property: opacity;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -338,14 +338,26 @@ p {
 }
 
 .about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   padding-bottom: 50px;
   max-width: 980px;
 }
 
-.about img {
-  max-height: 100px;
+.logo-icon {
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
+}
+
+.logo-icon svg {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
 }
 
 .intro {
