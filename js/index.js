@@ -139,6 +139,7 @@ function HomePage() {
         alt="${alt[lang]}">
     </section>
     <section class="about">
+      <h1 class="hidden">Cultiva</h1>
       <div class="logo-icon"></div>
       <article class="intro">
         <div class="text">

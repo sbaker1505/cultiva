@@ -66,6 +66,12 @@ p {
   left: 0;
 }
 
+.hidden, .nav-logo {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 .header-nav {
   left: 0;
   bottom: 0;
@@ -224,24 +230,6 @@ p {
   justify-content: flex-start;
 }
 
-.nav-logo {
-  display: none;
-  padding: 4px;
-  z-index: 99;
-  width: 150px;
-  height: 150px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  align-self: flex-start;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transition-property: all;
-  transition-duration: 0.6s;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  will-change: all;
-}
-
 .nav-logo svg {
   border-radius: 50%;
   background-color: white;
@@ -251,41 +239,54 @@ p {
 @media only screen and (min-width: 800px) {
   .nav-logo {
     display: flex;
+    overflow: visible;
+    padding: 4px;
+    z-index: 99;
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: all;
   }
-}
-
-.nav-logo::before {
-  transition-property: opacity;
-  transition-duration: 0.6s;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  will-change: opacity;
-  transition-delay: 200ms;
-  content: '';
-  width: 100%;
-  height: 50%;
-  top: 50%;
-  box-shadow: 0 -2px 14px 2px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  border-radius: 0 0 calc(150px / 2) calc(150px / 2);
-  z-index: -2;
-}
-
-.nav-logo::after {
-  transition-property: opacity;
-  transition-duration: 0.6s;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  will-change: opacity;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: white;
-  border-radius: 50%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+  .nav-logo::before {
+    transition-property: opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: opacity;
+    transition-delay: 200ms;
+    content: '';
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    box-shadow: 0 -2px 14px 2px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    border-radius: 0 0 calc(150px / 2) calc(150px / 2);
+    z-index: -2;
+  }
+  .nav-logo::after {
+    transition-property: opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: opacity;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
 
 .scroll-logo {
@@ -347,7 +348,6 @@ p {
 }
 
 .logo-icon {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -357,7 +357,20 @@ p {
 .logo-icon svg {
   width: 200px;
   height: 200px;
-  border: 1px solid red;
+}
+
+.logo-icon path {
+  fill: url(#a) #637d37;
+}
+
+.logo-icon path.logo-cultiva {
+  fill: #0f1308;
+}
+
+@media only screen and (min-width: 800px) {
+  .logo-icon path:not(.logo-cultiva-icon) {
+    display: none;
+  }
 }
 
 .intro {

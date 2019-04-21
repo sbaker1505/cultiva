@@ -126,19 +126,8 @@
 }
 
 .nav-logo {
-  display: none;
-  padding: 4px;
-  z-index: 99;
-  @include size ($logoDia, $logoDia);
-  flex-shrink  : 0;
-  border-radius: 50%;
-  align-self   : flex-start;
-  justify-content: center;
-  align-items: center;
-  // background   : $white;
-  position: relative;
-  @include transition;
-
+  @extend .hidden;
+  
   svg {
     border-radius: 50%;
     background-color: $white;
@@ -147,30 +136,41 @@
 
   @include min800 {
     display: flex;
-  }
-
-  &::before{
-    @include transition(opacity);
-    transition-delay: 200ms;
-    content: '';
-    width: 100%;
-    height: 50%;
-    top: 50%;
-    box-shadow: 0 -2px 14px 2px rgba(0,0,0,0.2);
-    position: absolute;
-    border-radius: 0 0 calc(#{$logoDia} / 2) calc(#{$logoDia} / 2);
-    z-index: -2;
-  }
-
-  &::after {
-    @include transition(opacity);
-    content: '';
-    position: absolute;
-    @include size(100%, 100%);
-    background: $white;
+    overflow: visible;
+    padding: 4px;
+    z-index: 99;
+    @include size ($logoDia, $logoDia);
+    flex-shrink  : 0;
     border-radius: 50%;
-    @include position;
-    z-index:-1;
+    align-self   : flex-start;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @include transition;
+
+    &::before{
+      @include transition(opacity);
+      transition-delay: 200ms;
+      content: '';
+      width: 100%;
+      height: 50%;
+      top: 50%;
+      box-shadow: 0 -2px 14px 2px rgba(0,0,0,0.2);
+      position: absolute;
+      border-radius: 0 0 calc(#{$logoDia} / 2) calc(#{$logoDia} / 2);
+      z-index: -2;
+    }
+
+    &::after {
+      @include transition(opacity);
+      content: '';
+      position: absolute;
+      @include size(100%, 100%);
+      background: $white;
+      border-radius: 50%;
+      @include position;
+      z-index:-1;
+    }
   }
 }
 
