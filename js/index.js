@@ -3,6 +3,7 @@ const page = $('html');
 let lang = localStorage.getItem("lang")
             ? localStorage.getItem("lang") :'es'
 let offset;
+let lazyImages;
 
 //Scroll Event for Logo and Lang
 window.addEventListener('scroll', function() {
@@ -15,6 +16,7 @@ window.addEventListener('scroll', function() {
   pageYOffset >= 40
     ? $('.header-nav').addClass   ("scroll")
     : $('.header-nav').removeClass("scroll")
+    lazyLoad(lazyImages);
 });
 
 $(window).resize(function(){
@@ -36,6 +38,7 @@ $(window).resize(function(){
       $('.slider-contact').remove();
     }
   }
+  lazyLoad(lazyImages)
 })
 
 //loadPage ⏱
@@ -244,8 +247,8 @@ function Products(type) {
   const ProductList = $('.product-list');
   list.map(item => ProductList.append(`
     <div class="product-item" id="${type[0] + item.id}">
-      <img src="../img/${type + '/' + item.image + '_' + srcset[0] + format}"
-        srcset="${srcset.map(num =>
+      <img class="lazy-image" data-src="../img/${type + '/' + item.image + '_' + srcset[0] + format}"
+        data-srcset="${srcset.map(num =>
           `../img/${type + '/' + item.image + '_' + num + format} ${num + 'w'} `)}"
         sizes="250px"
         alt=""/>
@@ -275,6 +278,8 @@ function Products(type) {
     })
   //use for styling only
   // $('#f0001').click();
+  lazyImages = [...document.querySelectorAll('.lazy-image')]
+  lazyLoad(lazyImages)
 }
 
 //create Image Page
@@ -327,3 +332,21 @@ function closePopup(){
 
 //renderView
 $(document).ready(loadPage)
+
+
+
+// Lazy load
+
+let inAdvance = 300
+
+function lazyLoad(images) {
+    images.forEach(image => {
+        if (image.offsetTop < window.innerHeight + window.pageYOffset + inAdvance) {
+            image.src = image.dataset.src
+            image.srcset = image.dataset.srcset
+            image.onload = () => image.classList.add('loaded')
+        }
+    })
+
+    // if all loaded removeEventListener
+}
