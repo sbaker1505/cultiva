@@ -24,26 +24,24 @@ footer {
     cursor: pointer;
     color: $green;
   }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 80vw;
+    max-width: 980px;
+  }
 
-}
+  .icons{margin-top: 15px}
 
-.contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  width: 80vw;
-  max-width: 980px;
-}
-
-.icons{margin-top: 15px}
-
-.social {
-  margin-right: 10px;
-  @include transition(color);
-  transition-duration: 200ms;
-  &:hover, &:active {
-    color: $green;
+  .social {
+    margin-right: 10px;
+    @include transition(color);
+    transition-duration: 200ms;
+    &:hover, &:active {
+      color: $green;
+    }
   }
 }

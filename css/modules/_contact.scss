@@ -1,6 +1,6 @@
 // main:../style.scss
 
-//slider styles
+/* Slider */
 .slider {
   &-contact {
     @include size(100%, auto);
@@ -22,6 +22,7 @@
 
     &-container {
       overflow: scroll;
+      // Disable Scrollbars
       -ms-overflow-style: none;  // IE 10+
       scrollbar-width: none;  // Firefox
       &::-webkit-scrollbar {
@@ -117,7 +118,7 @@
   }
 }
 
-//contact page styles
+/* Contact Page */
 .contact-form {
   padding: 60px 0;
   display: flex;
@@ -160,7 +161,7 @@ button {
     background-color: darken($green, 5);
   }
 }
-
+/* Google Map */
 #map {
   height     : 500px ;
   overflow   : hidden;

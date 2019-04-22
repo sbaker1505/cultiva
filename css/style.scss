@@ -7,8 +7,7 @@
 /* entypo icons */
 [class*="entypo-"]:before { font: 1.5rem 'entypo', sans-serif }
 
-// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
-
+/* Resets */
 * {
   margin    : 0;
   padding   : 0;
@@ -21,7 +20,7 @@
   font-family: 'neutra_textlight_alt', sans-serif;
   font-display: swap;
 }
-
+/* General Styling */
 body {
   width      : 80vw;
   margin     : auto;
@@ -71,11 +70,19 @@ p {
 }
 
 //modules
+/* Header */
 @import 'modules/header';
+/* Home Page */
 @import 'modules/home';
+/* Product Main Page */
 @import 'modules/products';
+/* Product Item Pages */
 @import 'modules/productItem';
+/* Product description popup */
+@import 'modules/popup';
+/* Images Page */
 @import 'modules/images';
 @import 'modules/contact';
+/* Footer Element */
 @import 'modules/footer';
-@import 'modules/popup';
+/* END */
